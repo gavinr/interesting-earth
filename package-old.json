@@ -1,0 +1,25 @@
+{
+  "name": "interesting-earth",
+  "version": "1.0.0",
+  "description": "View all the cool places featured in the Wordview app - all in one page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavinr/interesting-earth.git"
+  },
+  "keywords": [
+    "worldview",
+    "maps",
+    "earth",
+    "fun"
+  ],
+  "author": "Gavin Rehkemper <gavin@gavinr.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gavinr/interesting-earth/issues"
+  },
+  "homepage": "https://github.com/gavinr/interesting-earth#readme"
+}
