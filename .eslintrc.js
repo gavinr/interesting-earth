@@ -37,6 +37,8 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'no-undef': 'off',
     'no-unused-vars': 'off',
-    'no-console': 'off'
+    'no-console': 'off',
+    'max-len': ["error", 120, { "ignoreUrls": true }],
+    'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
   }
 }
