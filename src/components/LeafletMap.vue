@@ -1,11 +1,12 @@
 <template>
-  <v-map :zoom="zoom" :center="center" :options="{scrollWheelZoom: false}">
-    <v-tilelayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"></v-tilelayer>
-  </v-map>
+  <div class="component"></div>
 </template>
 
 <script>
-import { Map as VueMap, TileLayer, Marker } from 'vue2-leaflet';
+import L from 'leaflet';
+import esri from 'esri-leaflet';
+
+L.esri = esri;
 
 export default {
   name: 'LeafletMap',
@@ -13,10 +14,20 @@ export default {
     return {};
   },
   components: {
-    'v-map': VueMap,
-    'v-tilelayer': TileLayer,
   },
   props: {
+    options: {
+      type: Object,
+      default: () => ({}),
+    },
+    minZoom: {
+      type: Number,
+      default: undefined,
+    },
+    maxZoom: {
+      type: Number,
+      default: undefined,
+    },
     center: {
       type: Array,
       default: [-122, 38],
@@ -30,6 +41,24 @@ export default {
       required: true,
       default: 'streets',
     },
+  },
+  mounted() {
+    const options = this.options;
+    Object.assign(options, {
+      minZoom: this.minZoom,
+      maxZoom: this.maxZoom,
+    });
+    if (this.center != null) {
+      options.center = this.center;
+    }
+    if (this.zoom != null) {
+      options.zoom = this.zoom;
+    }
+
+    const map = L.map(this.$el, options);
+
+    L.esri.basemapLayer('Imagery').addTo(map);
+    L.esri.basemapLayer('ImageryLabels').addTo(map);
   },
 };
 </script>

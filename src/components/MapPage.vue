@@ -2,11 +2,11 @@
   <div class="mapPageWrapper">
     <div class="pageTitle">
       <h2>Interesting Earth</h2>
-      <p>Showing the Earth's most interesting locations from the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg">worldview chrome extension</a>, but all on one page.</p>
+      <p>Showing the Earth's most interesting locations from the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg">worldview chrome extension</a>, all on one page.</p>
     </div>
     <div class="mapContainer" v-for="location in filteredLocations" :key="location.id">
       <div class="title">{{ location.title }}</div>
-      <LeafletMap v-if="mapType == 'leaflet'" :center="location.center"  :zoom="location.zoom" :basemap="location.basemap"></LeafletMap>
+      <LeafletMap v-if="mapType == 'leaflet'" :center="location.center"  :zoom="location.zoom" :basemap="location.basemap" :options="{scrollWheelZoom: false}"></LeafletMap>
       <EsriMap v-else :center="location.center"  :zoom="location.zoom" :basemap="location.basemap"></EsriMap>
     </div>
   </div>
@@ -61,7 +61,8 @@ export default {
         this.locations = response.data.features.map((feature, i) => ({
           id: feature.attributes.OBJECTID,
           center: [feature.geometry.y, feature.geometry.x],
-          zoom: feature.attributes.Zoom_Level,
+           // zoom out by 1 zoom level since most of these zoom levels are designed for "full browser" view:
+          zoom: feature.attributes.Zoom_Level - 1,
           title: feature.attributes.Location_Name,
           basemap: 'hybrid',
         }));

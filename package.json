@@ -15,10 +15,11 @@
   },
   "dependencies": {
     "axios": "^0.17.0",
+    "esri-leaflet": "^2.1.1",
     "esri-loader": "^1.2.0",
+    "leaflet": "^1.2.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
-    "vue2-leaflet": "0.0.56"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
