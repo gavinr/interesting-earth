@@ -40,5 +40,6 @@ module.exports = {
     'no-console': 'off',
     'max-len': ["error", 120, { "ignoreUrls": true }],
     'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
+    'linebreak-style': 'off'
   }
 }

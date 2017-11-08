@@ -1,5 +1,9 @@
 <template>
   <div class="mapPageWrapper">
+    <div class="pageTitle">
+      <h2>Interesting Earth</h2>
+      <p>Showing the Earth's most interesting locations from the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg">worldview chrome extension</a>, but all on one page.</p>
+    </div>
     <div class="mapContainer" v-for="location in filteredLocations" :key="location.id">
       <div class="title">{{ location.title }}</div>
       <LeafletMap v-if="mapType == 'leaflet'" :center="location.center"  :zoom="location.zoom" :basemap="location.basemap"></LeafletMap>
