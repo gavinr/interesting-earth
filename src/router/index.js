@@ -11,11 +11,19 @@ export default new Router({
       path: '/',
       name: 'Map',
       component: MapPage,
+      props: { mapType: 'leaflet' },
     },
     {
-      path: '/map',
-      name: 'Map',
+      path: '/leaflet',
+      name: 'Leaflet Map',
       component: MapPage,
+      props: { mapType: 'leaflet' },
+    },
+    {
+      path: '/esri',
+      name: 'Esri Map',
+      component: MapPage,
+      props: { mapType: 'esri' },
     },
   ],
 });

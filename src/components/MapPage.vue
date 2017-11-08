@@ -1,19 +1,29 @@
 <template>
   <div class="mapPageWrapper">
     <div class="mapContainer" v-for="location in filteredLocations" :key="location.id">
-      <EsriMap :center="location.center"  :zoom="location.zoom" :basemap="location.basemap"></EsriMap>
+      <div class="title">{{ location.title }}</div>
+      <LeafletMap v-if="mapType == 'leaflet'" :center="location.center"  :zoom="location.zoom" :basemap="location.basemap"></LeafletMap>
+      <EsriMap v-else :center="location.center"  :zoom="location.zoom" :basemap="location.basemap"></EsriMap>
     </div>
   </div>
 </template>
 
 <script>
+import LeafletMap from '@/components/LeafletMap';
 import EsriMap from '@/components/EsriMap';
 import axios from 'axios';
 
 export default {
   name: 'MapPage',
   components: {
+    LeafletMap,
     EsriMap,
+  },
+  props: {
+    mapType: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {
@@ -30,13 +40,13 @@ export default {
         }
         return array;
       };
-      return shuffleArray(this.locations).slice(1, 9);
+      return shuffleArray(this.locations);
     },
   },
 
   // when the component loads, get the list of locations and transform them into the data we need
   mounted() {
-    axios.get('https://utility.arcgis.com/usrsvcs/servers/36da3269d90e4eae940b3d7a17ee6b4b/rest/services/worldviewlive_internal/FeatureServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&units=esriSRUnit_Meter&outFields=*&returnGeometry=true&outSR=4326&f=json&where=OBJECTID<40').then((response) => {
+    axios.get('https://utility.arcgis.com/usrsvcs/servers/36da3269d90e4eae940b3d7a17ee6b4b/rest/services/worldviewlive_internal/FeatureServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&units=esriSRUnit_Meter&outFields=*&returnGeometry=true&outSR=4326&f=json&where=1=1').then((response) => {
       if (
         response &&
         response.status === 200 &&
@@ -46,8 +56,9 @@ export default {
       ) {
         this.locations = response.data.features.map((feature, i) => ({
           id: feature.attributes.OBJECTID,
-          center: [feature.geometry.x, feature.geometry.y],
+          center: [feature.geometry.y, feature.geometry.x],
           zoom: feature.attributes.Zoom_Level,
+          title: feature.attributes.Location_Name,
           basemap: 'hybrid',
         }));
       } else {
@@ -65,13 +76,33 @@ export default {
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
   }
+  .mapContainer {
+    position: relative;
+  }
+  .title {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 401;
+
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 4px 9px;
+    font-weight: 100;
+    letter-spacing: .5;
+  }
+  @media screen and (max-width: 1280px) { 
+    .mapPageWrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   
   @media screen and (max-width: 1024px) { 
     .mapPageWrapper {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  @media screen and (max-width: 400px) { 
+  @media screen and (max-width: 600px) { 
     .mapPageWrapper {
       grid-template-columns: repeat(1, 1fr);
     }
