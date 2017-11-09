@@ -2,6 +2,9 @@
 
 > Showing the Earth's most interesting locations from the [worldview chrome extension](https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg), all on one page.
 
+
+[![screenshot](https://imgur.com/0jb32kt.png)](https://gavinr.github.io/interesting-earth/)
+
 ## Build Setup
 
 ``` bash
