@@ -11,7 +11,8 @@
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "deploy": "gh-pages-deploy"
   },
   "dependencies": {
     "axios": "^0.17.0",
@@ -105,5 +106,11 @@
     "maps",
     "earth",
     "fun"
-  ]
+  ],
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "prep": [
+      "build"
+    ]
+  }
 }
