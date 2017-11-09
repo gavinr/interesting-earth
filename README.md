@@ -1,6 +1,6 @@
 # interesting-earth
 
-> View all the cool places featured in the Wordview app - all in one page.
+> Showing the Earth's most interesting locations from the [worldview chrome extension](https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg), all on one page.
 
 ## Build Setup
 
