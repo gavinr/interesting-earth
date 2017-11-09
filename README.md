@@ -5,7 +5,13 @@
 
 [![screenshot](https://imgur.com/0jb32kt.png)](https://gavinr.github.io/interesting-earth/)
 
-## Build Setup
+## Credit
+
+- [worldview chrome extension](https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg)
+- [Vue.js](https://vuejs.org/)/[vue-cli](https://github.com/vuejs/vue-cli)
+- [leaflet](http://leafletjs.com/)/[esri-leaflet](https://esri.github.io/esri-leaflet/)
+
+## Development
 
 ``` bash
 # install dependencies

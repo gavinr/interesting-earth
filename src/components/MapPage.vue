@@ -3,6 +3,10 @@
     <div class="pageTitle">
       <h2>Interesting Earth</h2>
       <p>Showing the Earth's most interesting locations from the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg">worldview chrome extension</a>, all on one page.</p>
+      <p style="text-align:center">
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/gavinr/interesting-earth" data-show-count="true" aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
+      </p>
     </div>
     <div class="mapContainer" v-for="location in filteredLocations" :key="location.id">
       <div class="title">{{ location.title }}</div>
