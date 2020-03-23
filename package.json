@@ -16,6 +16,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "esri-loader": "^2.13.0",
     "sirv-cli": "^0.4.4"
   }
 }
