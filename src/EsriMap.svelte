@@ -107,5 +107,6 @@
 </style>
 
 <div class="wrapper" bind:this={wrapper}>
-  <div class="map" bind:this={viewContainer}><div class="title">{title}</div></div>
+  <div class="map" bind:this={viewContainer}></div>
+  <div class="title">{title}</div>
 </div>
