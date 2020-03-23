@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-
+  import { shuffleArray } from "./utils.js";
   import EsriMap from "./EsriMap.svelte";
 
   let locations = [];
@@ -19,9 +19,9 @@
         return response.json();
       })
       .then(data => {
-        console.log("fetch response:");
-        console.log(data);
-        locations = data.features.map((feature, i) => ({
+        const shuffledArray = [... data.features ]
+        shuffleArray(shuffledArray);
+        locations = shuffledArray.map((feature, i) => ({
           id: feature.attributes.OBJECTID,
           center: [feature.geometry.x, feature.geometry.y],
            // zoom out by 1 zoom level since most of these zoom levels are designed for "full browser" view:
