@@ -17,7 +17,7 @@
   let isLoaded = false;
 
   const options = {
-    version: '4.14',
+    version: '4.16',
     css: true
   };
 
