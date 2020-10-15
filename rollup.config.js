@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+import sveltePreprocess from 'svelte-preprocess';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -20,9 +21,10 @@ export default {
 			dev: !production,
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
-			css: css => {
-				css.write('public/build/bundle.css');
-			}
+			// css: css => {
+			// 	css.write('public/build/bundle.css');
+			// },
+			preprocess: sveltePreprocess({ postcss: true }),
 		}),
 
 		// If you have external dependencies installed from
@@ -34,14 +36,7 @@ export default {
 			browser: true,
 			dedupe: ['svelte']
 		}),
-		commonjs({
-			namedExports: {
-				// left-hand side can be an absolute path, a path
-				// relative to the current directory, or the name
-				// of a module in node_modules
-				'esri-loader': ['loadModules']
-			}
-		}),
+		commonjs({}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
