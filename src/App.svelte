@@ -1,7 +1,6 @@
 <script>
   import { onMount } from "svelte";
   import { shuffleArray } from "./utils.js";
-  import EsriMap from "./EsriMap.svelte";
 
   let locations = [];
   let allNodes = [];
@@ -85,7 +84,7 @@
   <div class="mapGridWrapper">
     {#each locations as locationInfo, i}
       <div class="mapWrapper" use:trackNodes>
-        <EsriMap basemap={'hybrid'} center={locationInfo.center} zoom={locationInfo.zoom} title={locationInfo.title} />
+        HERE
       </div>
     {/each}
   </div>
