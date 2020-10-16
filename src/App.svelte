@@ -1,14 +1,17 @@
 <script>
   import { onMount } from "svelte";
   import { shuffleArray } from "./utils.js";
-  import LeafletMap from "./LeafletMap.svelte";
+
+  import Hopper from "./Hopper.svelte";
+  import Grid from "./Grid.svelte";
 
   let locations = [];
   let allNodes = [];
+  let gridMode = false;
 
-  const trackNodes = (node) => {
-    allNodes.push(node);
-  };
+  // const trackNodes = (node) => {
+  //   allNodes.push(node);
+  // };
 
   onMount(() => {
     fetch(
@@ -39,39 +42,11 @@
     margin: 0 auto;
   }
 
-  .mapWrapper {
-    height: 500px;
-  }
-
   h1 {
     color: #ff3e00;
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100;
-  }
-
-  .mapGridWrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
-
-  @media (min-width: 900px) {
-    .mapGridWrapper {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .mapGridWrapper {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media (min-width: 1400px) {
-    .mapGridWrapper {
-      grid-template-columns: repeat(4, 1fr);
-    }
   }
 </style>
 
@@ -84,20 +59,23 @@
       target="_blank">worldview chrome extension</a>, all on one page.
   </p>
   <p>
+    <button
+      on:click={() => {
+        gridMode = !gridMode;
+      }}>Swap Mode</button>
+  </p>
+  <p>
     <a
       class="github-button"
       href="https://github.com/gavinr/interesting-earth"
       data-show-count="true"
       aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
   </p>
-  <div class="mapGridWrapper">
-    {#each locations as locationInfo, i}
-      <div class="mapWrapper" use:trackNodes>
-        <LeafletMap
-          center={locationInfo.center}
-          zoom={locationInfo.zoom}
-          title={locationInfo.title} />
-      </div>
-    {/each}
+  <div>
+    {#if gridMode === true}
+      <Grid {locations} />
+    {:else}
+      <Hopper {locations} basemap="hybrid" />
+    {/if}
   </div>
 </main>
