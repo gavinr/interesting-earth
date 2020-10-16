@@ -36,42 +36,58 @@
 </script>
 
 <style>
+  h1 {
+    margin: 0;
+  }
   main {
-    text-align: center;
-    padding: 1em;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .subtitle {
+    font-size: 0.8rem;
+    font-style: italic;
   }
 
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+  .topWrapper {
+    display: flex;
+  }
+  .mainAreaWrapper {
+    height: 100%;
   }
 </style>
 
 <main>
-  <h1>Interesting Earth</h1>
-  <p>
-    Showing the Earth's most interesting locations from the
-    <a
-      href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg"
-      target="_blank">worldview chrome extension</a>, all on one page.
-  </p>
-  <p>
-    <button
-      on:click={() => {
-        gridMode = !gridMode;
-      }}>Swap Mode</button>
-  </p>
-  <p>
-    <a
-      class="github-button"
-      href="https://github.com/gavinr/interesting-earth"
-      data-show-count="true"
-      aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
-  </p>
-  <div>
+  <div class="topWrapper">
+    <div>
+      <h1>Interesting Earth</h1>
+
+      <p class="subtitle">
+        Showing the Earth's most interesting locations from the
+        <a
+          href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg"
+          target="_blank">worldview chrome extension</a>.
+      </p>
+    </div>
+    <div style="flex-grow: 1; text-align: right;">
+      <a
+        class="github-button"
+        href="https://github.com/gavinr/interesting-earth"
+        data-show-count="true"
+        aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
+      <div>
+        <a
+          href="#"
+          on:click={() => {
+            gridMode = !gridMode;
+          }}>View
+          {gridMode !== true ? 'Grid' : 'Hopper'}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainAreaWrapper">
     {#if gridMode === true}
       <Grid {locations} />
     {:else}
