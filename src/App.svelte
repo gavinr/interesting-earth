@@ -1,14 +1,17 @@
 <script>
   import { onMount } from "svelte";
   import { shuffleArray } from "./utils.js";
-  import LeafletMap from "./LeafletMap.svelte";
+
+  import Hopper from "./Hopper.svelte";
+  import Grid from "./Grid.svelte";
 
   let locations = [];
   let allNodes = [];
+  let gridMode = false;
 
-  const trackNodes = (node) => {
-    allNodes.push(node);
-  };
+  // const trackNodes = (node) => {
+  //   allNodes.push(node);
+  // };
 
   onMount(() => {
     fetch(
@@ -33,71 +36,62 @@
 </script>
 
 <style>
-  main {
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto;
-  }
-
-  .mapWrapper {
-    height: 500px;
-  }
-
   h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+    margin: 0;
+  }
+  main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .subtitle {
+    font-size: 0.8rem;
+    font-style: italic;
   }
 
-  .mapGridWrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+  .topWrapper {
+    display: flex;
   }
-
-  @media (min-width: 900px) {
-    .mapGridWrapper {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .mapGridWrapper {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media (min-width: 1400px) {
-    .mapGridWrapper {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  .mainAreaWrapper {
+    height: 100%;
   }
 </style>
 
 <main>
-  <h1>Interesting Earth</h1>
-  <p>
-    Showing the Earth's most interesting locations from the
-    <a
-      href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg"
-      target="_blank">worldview chrome extension</a>, all on one page.
-  </p>
-  <p>
-    <a
-      class="github-button"
-      href="https://github.com/gavinr/interesting-earth"
-      data-show-count="true"
-      aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
-  </p>
-  <div class="mapGridWrapper">
-    {#each locations as locationInfo, i}
-      <div class="mapWrapper" use:trackNodes>
-        <LeafletMap
-          center={locationInfo.center}
-          zoom={locationInfo.zoom}
-          title={locationInfo.title} />
+  <div class="topWrapper">
+    <div>
+      <h1>Interesting Earth</h1>
+
+      <p class="subtitle">
+        Showing the Earth's most interesting locations from the
+        <a
+          href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg"
+          target="_blank">worldview chrome extension</a>.
+      </p>
+    </div>
+    <div style="flex-grow: 1; text-align: right;">
+      <a
+        class="github-button"
+        href="https://github.com/gavinr/interesting-earth"
+        data-show-count="true"
+        aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
+      <div>
+        <a
+          href="#"
+          on:click={() => {
+            gridMode = !gridMode;
+          }}>View
+          {gridMode !== true ? 'Grid' : 'Hopper'}</a>
       </div>
-    {/each}
+    </div>
+  </div>
+
+  <div class="mainAreaWrapper">
+    {#if gridMode === true}
+      <Grid {locations} />
+    {:else}
+      <Hopper {locations} basemap="hybrid" />
+    {/if}
   </div>
 </main>
