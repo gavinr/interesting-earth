@@ -28,7 +28,9 @@
     if (!view.interacting) {
       const arrItem = locations[index];
       console.log("arrItem", arrItem);
-      title = `${title} -> ${arrItem.title}`;
+      if (arrItem && title !== "") {
+        title = `${title} -> ${arrItem.title}`;
+      }
       // const scale = view.basemapTerrain.tilingScheme.scaleAtLevel(arrItem.attributes.Zoom_Level);
       const scale = map.basemap.baseLayers
         .getItemAt(0)
@@ -129,5 +131,7 @@
 
 <div class="wrapper" bind:this={wrapper}>
   <div class="map" bind:this={viewContainer} />
-  <div class="title">{title}</div>
+  {#if title}
+    <div class="title">{title}</div>
+  {/if}
 </div>
