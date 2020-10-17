@@ -28,17 +28,21 @@
     if (!view.interacting) {
       const arrItem = locations[index];
       console.log("arrItem", arrItem);
-      // document.getElementById('locationNode').innerHTML = arrItem.attributes.Location_Name;
+      title = `${title} -> ${arrItem.title}`;
       // const scale = view.basemapTerrain.tilingScheme.scaleAtLevel(arrItem.attributes.Zoom_Level);
       const scale = map.basemap.baseLayers
         .getItemAt(0)
         .tileInfo.zoomToScale(arrItem.zoom);
 
-      return view.goTo({
-        center: [arrItem.center[0], arrItem.center[1]],
-        scale: scale,
-        // tilt: 45
-      });
+      return view
+        .goTo({
+          center: [arrItem.center[0], arrItem.center[1]],
+          scale: scale,
+          // tilt: 45
+        })
+        .then(() => {
+          title = arrItem.title;
+        });
     } else {
       return Promise.resolve();
     }
@@ -111,8 +115,19 @@
     padding: 4px 9px;
     font-weight: 100;
   }
+  div .title {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 401;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 4px 9px;
+    font-weight: 100;
+  }
 </style>
 
 <div class="wrapper" bind:this={wrapper}>
   <div class="map" bind:this={viewContainer} />
+  <div class="title">{title}</div>
 </div>
