@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { shuffleArray } from "./utils.js";
+  import Swal from "sweetalert2";
 
   import Hopper from "./Hopper.svelte";
   import Grid from "./Grid.svelte";
@@ -77,6 +78,17 @@
         data-show-count="true"
         aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
       <div>
+        <a
+          href="#"
+          on:click={() => {
+            Swal.fire({
+              title: 'About Interesting Earth',
+              html:
+                'Randomly cycling through the most interesting locations in the world (featured in the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg" target="_blank">Worldview Chrome extension</a>).<br /><br />Check out both the grid and hopper mode!<br /><br />Built by <a href="https://gavinr.com" target="_blank">Gavin Rehkemper</a>',
+              confirmButtonText: 'OK',
+              backdrop: false,
+            });
+          }}>About</a><br />
         <a
           href="#"
           on:click={() => {
