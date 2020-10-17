@@ -2,7 +2,7 @@
 
 > Showing the Earth's most interesting locations from the [worldview chrome extension](https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg) ([GitHub](https://github.com/EsriUK/worldview)), all on one page.
 
-[![screenshot](https://i.imgur.com/ZrXV4pV.png)](https://gavinr.github.io/interesting-earth/)
+[![screenshot](https://i.imgur.com/ZrXV4pV.png)](https://interesting-earth.gavinr.com)
 
 ## Credit
 
