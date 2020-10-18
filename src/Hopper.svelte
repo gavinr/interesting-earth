@@ -130,6 +130,7 @@
     background-color: rgba(0, 0, 0, 0.65);
     padding: 4px 9px;
     font-weight: 100;
+    max-width: calc(100% - 80px); /* fix for long titles on small viewports */
   }
 </style>
 
