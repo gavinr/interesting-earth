@@ -24,10 +24,10 @@
   let viewContainer;
 
   const zoomTo = (index) => {
-    console.log("zoomTo", index);
+    // console.log("zoomTo", index);
     if (!view.interacting) {
       const arrItem = locations[index];
-      console.log("arrItem", arrItem);
+      // console.log("arrItem", arrItem);
       if (arrItem && title !== "") {
         title = `${title} -> ${arrItem.title}`;
       }
@@ -62,8 +62,7 @@
           }, 6000);
         },
         (err) => {
-          toggleIcon();
-          playing = !playing;
+          // skip, it'll come around again
         }
       );
     }
