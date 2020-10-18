@@ -71,8 +71,8 @@
 
   const createMap = async () => {
     // load Esri JSAPI modules
-    const [EsriMap, SceneView, watchUtils] = await loadModules(
-      ["esri/Map", "esri/views/SceneView", "esri/core/watchUtils"],
+    const [EsriMap, SceneView, Fullscreen] = await loadModules(
+      ["esri/Map", "esri/views/SceneView", "esri/widgets/Fullscreen"],
       options
     );
     map = new EsriMap({
@@ -86,6 +86,11 @@
       center,
       zoom,
     });
+
+    const fullscreen = new Fullscreen({
+      view: view,
+    });
+    view.ui.add(fullscreen, "top-left");
 
     view.when(() => {
       startTour();
