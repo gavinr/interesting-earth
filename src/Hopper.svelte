@@ -13,6 +13,8 @@
   let playing = true;
   let wrapper;
   let map, view;
+  let zoomingOrAboutToZoom = false;
+  let cameraController;
 
   const options = {
     version: "4.17",
@@ -24,10 +26,8 @@
   let viewContainer;
 
   const zoomTo = (index) => {
-    // console.log("zoomTo", index);
     if (!view.interacting) {
       const arrItem = locations[index];
-      // console.log("arrItem", arrItem);
       if (arrItem && title !== "") {
         title = `${title} -> ${arrItem.title}`;
       }
@@ -40,7 +40,8 @@
         .goTo({
           center: [arrItem.center[0], arrItem.center[1]],
           scale: scale,
-          // tilt: 45
+          rotation: 0,
+          tilt: 0,
         })
         .then(() => {
           title = arrItem.title;
@@ -50,19 +51,40 @@
     }
   };
 
+  const slowlyZoomIn = () => {
+    if (!zoomingOrAboutToZoom) {
+      requestAnimationFrame(() => {
+        view.state.switchCameraController(cameraController);
+        cameraController.begin([100, 100]);
+        cameraController.update([101, 99]);
+        cameraController.end();
+        slowlyZoomIn();
+      });
+    } else {
+      cameraController.end();
+    }
+  };
+
   const startTour = () => {
     if (playing) {
       currentIndex = currentIndex + 1;
+      zoomingOrAboutToZoom = true;
       zoomTo(currentIndex).then(
         () => {
+          zoomingOrAboutToZoom = false;
+          slowlyZoomIn();
           setTimeout(() => {
+            zoomingOrAboutToZoom = true;
             if (playing) {
-              startTour();
+              requestAnimationFrame(() => {
+                startTour();
+              });
             }
           }, 6000);
         },
         (err) => {
           // skip, it'll come around again
+          console.log("error", err);
         }
       );
     }
@@ -70,8 +92,18 @@
 
   const createMap = async () => {
     // load Esri JSAPI modules
-    const [EsriMap, SceneView, Fullscreen] = await loadModules(
-      ["esri/Map", "esri/views/SceneView", "esri/widgets/Fullscreen"],
+    const [
+      EsriMap,
+      SceneView,
+      Fullscreen,
+      RotateController,
+    ] = await loadModules(
+      [
+        "esri/Map",
+        "esri/views/SceneView",
+        "esri/widgets/Fullscreen",
+        "esri/views/3d/state/controllers/RotateController",
+      ],
       options
     );
     map = new EsriMap({
@@ -92,6 +124,10 @@
     view.ui.add(fullscreen, "top-left");
 
     view.when(() => {
+      cameraController = new RotateController.RotateController({
+        view: view,
+        pivot: "center",
+      });
       startTour();
     });
   };
