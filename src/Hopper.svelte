@@ -120,7 +120,7 @@
                     startTour();
                   });
                 }
-              }, 10000);
+              }, 10000); // Zoom for 10 seconds then move on
             },
             (err) => {
               console.error("could not find elevation difference");
