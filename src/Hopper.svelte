@@ -33,6 +33,9 @@
         title = `${title} -> ${arrItem.title}`;
       }
       // const scale = view.basemapTerrain.tilingScheme.scaleAtLevel(arrItem.attributes.Zoom_Level);
+      if (!arrItem) {
+        console.error("Error!", arrItem, index, locations);
+      }
       const scale = map.basemap.baseLayers
         .getItemAt(0)
         .tileInfo.zoomToScale(arrItem.zoom);
@@ -57,14 +60,16 @@
     if (!zoomingOrAboutToZoom && view.camera.position.z > 500) {
       requestAnimationFrame(() => {
         const camera = view.camera.clone();
-        let zoomSpeed = 20;
+        let zoomSpeed = 15;
         if (camera.position.z < 3000) {
           zoomSpeed = 0.5;
         } else if (camera.position.z < 5000) {
           zoomSpeed = 1;
         } else if (camera.position.z < 10000) {
-          zoomSpeed = 4;
+          zoomSpeed = 3;
         } else if (camera.position.z < 20000) {
+          zoomSpeed = 5;
+        } else if (camera.position.z < 50000) {
           zoomSpeed = 10;
         }
 
@@ -76,11 +81,16 @@
   };
 
   const rotateAround = () => {
+    // console.log("rotateAround", view.camera.tilt);
     if (!zoomingOrAboutToZoom) {
+      let whereToMove = [101, 98];
+      if (view.camera.tilt > 80) {
+        whereToMove = [102, 100];
+      }
       requestAnimationFrame(() => {
         view.state.switchCameraController(cameraController);
         cameraController.begin([100, 100]);
-        cameraController.update([101, 99]);
+        cameraController.update(whereToMove);
         cameraController.end();
         rotateAround();
       });
@@ -98,7 +108,7 @@
           zoomingOrAboutToZoom = false;
           checkElevation(view, map.ground.layers.getItemAt(0)).then(
             (totalElevationDifference) => {
-              if (totalElevationDifference < 700) {
+              if (totalElevationDifference < 100) {
                 slowlyZoomIn();
               } else {
                 rotateAround();

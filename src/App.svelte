@@ -103,7 +103,7 @@
     {#if gridMode === true}
       <Grid {locations} />
     {:else}
-      <Hopper {locations} basemap="hybrid" />
+      <Hopper {locations} basemap="satellite" />
     {/if}
   </div>
 </main>
