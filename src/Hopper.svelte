@@ -1,6 +1,7 @@
 <script>
   import { loadModules } from "esri-loader";
   import { onMount } from "svelte";
+  import { checkElevation } from "./Elevation";
 
   // props with default values in case none are passed in by a parent
   export let basemap = "streets";
@@ -52,13 +53,36 @@
   };
 
   const slowlyZoomIn = () => {
+    // console.log("slowlyZoomIn", view.camera.position.z);
+    if (!zoomingOrAboutToZoom && view.camera.position.z > 500) {
+      requestAnimationFrame(() => {
+        const camera = view.camera.clone();
+        let zoomSpeed = 20;
+        if (camera.position.z < 3000) {
+          zoomSpeed = 0.5;
+        } else if (camera.position.z < 5000) {
+          zoomSpeed = 1;
+        } else if (camera.position.z < 10000) {
+          zoomSpeed = 4;
+        } else if (camera.position.z < 20000) {
+          zoomSpeed = 10;
+        }
+
+        camera.position.z = camera.position.z - zoomSpeed;
+        view.camera = camera;
+        slowlyZoomIn();
+      });
+    }
+  };
+
+  const rotateAround = () => {
     if (!zoomingOrAboutToZoom) {
       requestAnimationFrame(() => {
         view.state.switchCameraController(cameraController);
         cameraController.begin([100, 100]);
         cameraController.update([101, 99]);
         cameraController.end();
-        slowlyZoomIn();
+        rotateAround();
       });
     } else {
       cameraController.end();
@@ -72,15 +96,27 @@
       zoomTo(currentIndex).then(
         () => {
           zoomingOrAboutToZoom = false;
-          slowlyZoomIn();
-          setTimeout(() => {
-            zoomingOrAboutToZoom = true;
-            if (playing) {
-              requestAnimationFrame(() => {
-                startTour();
-              });
+          checkElevation(view, map.ground.layers.getItemAt(0)).then(
+            (totalElevationDifference) => {
+              if (totalElevationDifference < 700) {
+                slowlyZoomIn();
+              } else {
+                rotateAround();
+              }
+              setTimeout(() => {
+                zoomingOrAboutToZoom = true;
+                if (playing) {
+                  requestAnimationFrame(() => {
+                    startTour();
+                  });
+                }
+              }, 10000);
+            },
+            (err) => {
+              console.error("could not find elevation difference");
+              console.error(err);
             }
-          }, 6000);
+          );
         },
         (err) => {
           // skip, it'll come around again
