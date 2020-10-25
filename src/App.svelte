@@ -54,9 +54,6 @@
   .topWrapper {
     display: flex;
   }
-  .mainAreaWrapper {
-    height: 100%;
-  }
 </style>
 
 <main>
@@ -99,11 +96,9 @@
     </div>
   </div>
 
-  <div class="mainAreaWrapper">
-    {#if gridMode === true}
-      <Grid {locations} />
-    {:else}
-      <Hopper {locations} basemap="satellite" />
-    {/if}
-  </div>
+  {#if gridMode === true}
+    <Grid {locations} />
+  {:else}
+    <Hopper {locations} basemap="satellite" />
+  {/if}
 </main>
