@@ -12,21 +12,20 @@
 
   let currentIndex = 0;
   let playing = true;
-  let wrapper;
   let map, view;
   let zoomingOrAboutToZoom = false;
   let cameraController;
 
   const options = {
     version: "4.17",
-    css: true
+    css: true,
   };
 
   // reference to the DOM node where this MapView instance will be created
   // see "bind:this={viewContainer}" below
   let viewContainer;
 
-  const zoomTo = index => {
+  const zoomTo = (index) => {
     if (!view.interacting) {
       const arrItem = locations[index];
       if (arrItem && title !== "") {
@@ -45,7 +44,7 @@
           center: [arrItem.center[0], arrItem.center[1]],
           scale: scale,
           rotation: 0,
-          tilt: 0
+          tilt: 0,
         })
         .then(() => {
           title = arrItem.title;
@@ -107,7 +106,7 @@
         () => {
           zoomingOrAboutToZoom = false;
           checkElevation(view, map.ground.layers.getItemAt(0)).then(
-            totalElevationDifference => {
+            (totalElevationDifference) => {
               if (totalElevationDifference < 100) {
                 slowlyZoomIn();
               } else {
@@ -122,13 +121,13 @@
                 }
               }, 10000); // Zoom for 10 seconds then move on
             },
-            err => {
+            (err) => {
               console.error("could not find elevation difference");
               console.error(err);
             }
           );
         },
-        err => {
+        (err) => {
           // skip, it'll come around again
           console.log("error", err);
         }
@@ -142,37 +141,37 @@
       EsriMap,
       SceneView,
       Fullscreen,
-      RotateController
+      RotateController,
     ] = await loadModules(
       [
         "esri/Map",
         "esri/views/SceneView",
         "esri/widgets/Fullscreen",
-        "esri/views/3d/state/controllers/RotateController"
+        "esri/views/3d/state/controllers/RotateController",
       ],
       options
     );
     map = new EsriMap({
       basemap,
-      ground: "world-elevation"
+      ground: "world-elevation",
     });
     // construct a MapView instance
     view = new SceneView({
       container: viewContainer,
       map,
       center,
-      zoom
+      zoom,
     });
 
     const fullscreen = new Fullscreen({
-      view: view
+      view: view,
     });
     view.ui.add(fullscreen, "top-left");
 
     view.when(() => {
       cameraController = new RotateController.RotateController({
         view: view,
-        pivot: "center"
+        pivot: "center",
       });
       startTour();
     });
@@ -217,7 +216,7 @@
   }
 </style>
 
-<div class="wrapper" bind:this={wrapper}>
+<div class="wrapper">
   <div class="map" bind:this={viewContainer} />
   {#if title}
     <div class="title">{title}</div>
