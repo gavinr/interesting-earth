@@ -9,6 +9,7 @@
   let locations = [];
   let allNodes = [];
   let gridMode = false;
+  let w = window.innerWidth;
 
   // const trackNodes = (node) => {
   //   allNodes.push(node);
@@ -68,29 +69,27 @@
       </p>
     </div>
     <div style="flex-grow: 1; text-align: right;">
-      <a
-        class="github-button"
-        href="https://github.com/gavinr/interesting-earth"
-        data-show-count="true"
-        aria-label="Star gavinr/interesting-earth on GitHub">Star</a>
       <div>
+        {#if w > 768}
+          <a
+            href="#"
+            on:click={() => {
+              gridMode = !gridMode;
+            }}>View
+            {gridMode !== true ? 'Grid' : 'Hopper'}</a>
+          -
+        {/if}
         <a
           href="#"
           on:click={() => {
             Swal.fire({
               title: 'About Interesting Earth',
               html:
-                'Randomly cycling through the most interesting locations in the world (featured in the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg" target="_blank">Worldview Chrome extension</a>).<br /><br />Check out both the grid and hopper mode!<br /><br />Built by <a href="https://gavinr.com" target="_blank">Gavin Rehkemper</a>',
+                'Randomly cycling through the most interesting locations in the world (featured in the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg" target="_blank">Worldview Chrome extension</a>). Check out both the grid and hopper mode!<br /><br />Built by <a href="https://gavinr.com" target="_blank">Gavin Rehkemper</a>.<br /><br /><strong>If you appreciate this page, please <a class="github-button" href="https://github.com/gavinr/interesting-earth" aria-label="Star gavinr/interesting-earth on GitHub">star this project on GitHub</a>.</strong>',
               confirmButtonText: 'OK',
               backdrop: false,
             });
-          }}>About</a><br />
-        <a
-          href="#"
-          on:click={() => {
-            gridMode = !gridMode;
-          }}>View
-          {gridMode !== true ? 'Grid' : 'Hopper'}</a>
+          }}>About</a>
       </div>
     </div>
   </div>
