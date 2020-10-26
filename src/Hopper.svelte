@@ -15,6 +15,7 @@
   let map, view;
   let zoomingOrAboutToZoom = false;
   let cameraController;
+  let w = window.innerWidth;
 
   const options = {
     version: "4.17",
@@ -163,10 +164,12 @@
       zoom,
     });
 
-    const fullscreen = new Fullscreen({
-      view: view,
-    });
-    view.ui.add(fullscreen, "top-left");
+    if (w > 768) {
+      const fullscreen = new Fullscreen({
+        view: view,
+      });
+      view.ui.add(fullscreen, "top-left");
+    }
 
     view.when(() => {
       cameraController = new RotateController.RotateController({
