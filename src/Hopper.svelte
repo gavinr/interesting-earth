@@ -184,14 +184,14 @@
 </script>
 
 <style>
-  div.wrapper,
   div.map {
-    width: 100%;
     height: 100%;
     position: relative;
   }
   div.wrapper {
     background-color: gray;
+    flex: 1;
+    position: relative;
   }
   .title {
     position: absolute;
