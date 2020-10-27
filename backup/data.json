@@ -1,0 +1,3436 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "uniqueIdField": { "name": "OBJECTID", "isSystemMaintained": true },
+  "globalIdFieldName": "",
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": { "wkid": 4326, "latestWkid": 4326 },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Location_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Location_Name",
+      "sqlType": "sqlTypeOther",
+      "length": 256,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Zoom_Level",
+      "type": "esriFieldTypeInteger",
+      "alias": "Zoom_Level",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 1,
+        "Location_Name": "Теректі ауданы, Kazakhstan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 51.677799225000058, "y": 50.523659075000069 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 2,
+        "Location_Name": "Siberia, Russia",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 68.490486145000034, "y": 71.485756768000044 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 3,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -19.265041350999979, "y": 64.217821912000034 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 4,
+        "Location_Name": "Heathrow Airport, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -0.48094666099996175, "y": 51.47159348200006 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 5,
+        "Location_Name": "Kidwelly, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -4.3439368519999562, "y": 51.725078407000069 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 6,
+        "Location_Name": "Greensplat Sand Plant, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -4.8436542589999476, "y": 50.379792946000066 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 7,
+        "Location_Name": "Salcombe, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -3.760830847999955, "y": 50.238457836000066 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 8,
+        "Location_Name": "All England Lawn Tennis Club, UK",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -0.2118404429999714, "y": 51.433628630000044 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 9,
+        "Location_Name": "Isles of Scilly, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -6.3450384599999552, "y": 49.942171295000037 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 10,
+        "Location_Name": "Maiden Castle, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -2.4676863929999513, "y": 50.69478517400006 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 11,
+        "Location_Name": "London Eye, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -0.11875291399996968, "y": 51.501990502000069 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 12,
+        "Location_Name": "Suilven, UK",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -5.1282120619999318, "y": 58.113806351000051 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 13,
+        "Location_Name": "Three Cliffs Bay, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -4.1120952619999684, "y": 51.571164636000049 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 14,
+        "Location_Name": "Ardnamurchan, UK",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -6.1364072729999748, "y": 56.739163205000068 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 15,
+        "Location_Name": "Errigal, Ireland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -8.1108527049999566, "y": 55.034505012000068 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 16,
+        "Location_Name": "Ingoldmells (Home of the Caravan!), UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 0.34378000400005249, "y": 53.191914005000058 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 17,
+        "Location_Name": "Tepoto Island",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -141.226236772, "y": -14.171453249999956 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 18,
+        "Location_Name": "The Prisoner Sands, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -4.1104384949999258, "y": 52.906554061000065 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 19,
+        "Location_Name": "Chevron Terminal, UK",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -5.0321924789999457, "y": 51.688602484000057 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 20,
+        "Location_Name": "Buckingham Palace, UK",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -0.14096746399997073, "y": 51.502060349000033 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 21,
+        "Location_Name": "Milbrook Vehicle Testing Ground, UK",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -0.53828994599996349, "y": 52.045160248000059 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 22,
+        "Location_Name": "Northala Fields, UK",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -0.37445440599992708, "y": 51.540213090000066 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 23,
+        "Location_Name": "Mull/Iona, UK",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -6.3971011519999479, "y": 56.329760874000044 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 24,
+        "Location_Name": "Pyramids of Giza, Egypt",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 31.13137006900007, "y": 29.976711898000076 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 25,
+        "Location_Name": "Andros, Bahamas",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -77.926454543999967, "y": 24.25091657400003 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 26,
+        "Location_Name": "Siberia, Russia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 140.33034324500011, "y": 51.952385585000059 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 27,
+        "Location_Name": "Friesland, Netherlands",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 5.4955673220000563, "y": 53.241797147000057 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 28,
+        "Location_Name": "Amboasary-Atsimo, Madagascar",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 46.093053818000044, "y": -24.442109755999979 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 29,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -19.039649962999931, "y": 64.142195862000051 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 30,
+        "Location_Name": "Tasmania, Australia",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 148.12316894500009, "y": -40.165756533999968 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 31,
+        "Location_Name": "Mount Fuji, Japan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 138.73990058900006, "y": 35.36634070100007 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 32,
+        "Location_Name": "布拉干薩街號, 氹仔, Macao",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 113.55350739300002, "y": 22.157991121000066 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 33,
+        "Location_Name": "Uluru, Australia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 131.03415011200002, "y": -25.344161773999929 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 34,
+        "Location_Name": "Pyongyang, North Korea",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 125.7409715550001, "y": 39.039894645000061 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 35,
+        "Location_Name": "Llyn Brianne Dam, Wales",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -3.75161647799996, "y": 52.124095963000059 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 36,
+        "Location_Name": "Wales",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -3.99737119699995, "y": 52.540312395000058 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 37,
+        "Location_Name": "Snowdonia, Wales",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -4.010739325999964, "y": 52.728638528000033 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 38,
+        "Location_Name": "Alberta, Canada",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -111.27914428699995, "y": 58.577740040000037 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 39,
+        "Location_Name": "Alberta, Canada",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -111.94570543199995, "y": 59.078649423000059 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 40,
+        "Location_Name": "Northern Rockies, Canada",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -125.02140999099998, "y": 58.305047247000061 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 41,
+        "Location_Name": "Betioky Atsimo, Madagascar",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 44.472184181000046, "y": -23.534422187999951 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 42,
+        "Location_Name": "Marovoay, Madagascar",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": 46.392173767000031, "y": -15.923200429999952 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 43,
+        "Location_Name": "Mahajanga I, Madagascar",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 47.051782608000053, "y": -15.612993441999947 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 44,
+        "Location_Name": "شنقيط, Mauritania",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": -11.399688720999961, "y": 21.109804598000039 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 45,
+        "Location_Name": "الجفرة, Libya",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 17.571129799000062, "y": 27.069711595000058 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 46,
+        "Location_Name": "Pakistan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 74.586782455000048, "y": 36.29555042100003 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 47,
+        "Location_Name": "Khalsi, India",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 76.934165954000036, "y": 34.004502440000067 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 48,
+        "Location_Name": "Khankhongor, Mongolia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 105.00217438200008, "y": 44.006737247000046 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 49,
+        "Location_Name": "Antarctica",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -59.830169677999947, "y": -64.45429364599994 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 50,
+        "Location_Name": "Республика Саха (Якутия), Russia",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 143.44848632800006, "y": 75.499908348000076 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 51,
+        "Location_Name": "Ненецкий автономный округ, Russia",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 49.741973877000078, "y": 69.143497927000055 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 52,
+        "Location_Name": "St-Augustin, Canada",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -58.666048050999962, "y": 51.202177948000042 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 53,
+        "Location_Name": "Moab, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -109.64896202199998, "y": 38.485979092000036 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 54,
+        "Location_Name": "Nunavut, Canada",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -79.329528808999953, "y": 56.175756700000079 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 55,
+        "Location_Name": "Argentina",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -62.734851836999951, "y": -30.282380442999965 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 56,
+        "Location_Name": "Galápagos, Ecuador",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -90.926971435999974, "y": -0.6255216309999696 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 57,
+        "Location_Name": "United Arab Emirates",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 53.659629822000056, "y": 22.990239421000069 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 59,
+        "Location_Name": "United Arab Emirates",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 54.25160408000005, "y": 24.360233101000063 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 60,
+        "Location_Name": "United Arab Emirates",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 55.207586289000062, "y": 25.055589610000027 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 61,
+        "Location_Name": "Alaska",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -154.84542846699998, "y": 70.600986234000061 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 62,
+        "Location_Name": "Dubai",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 55.15505790800006, "y": 25.116377983000064 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 63,
+        "Location_Name": "Новосибирская область, Russia",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 77.515411377000078, "y": 54.786433629000044 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 64,
+        "Location_Name": "Ақжар ауданы, Kazakhstan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 71.534299850000082, "y": 53.591078392000043 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 65,
+        "Location_Name": "Bandundu, Democratic Republic of the Congo",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 17.976379395000038, "y": -3.3626309519999609 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 66,
+        "Location_Name": "Alto Zambeze, Angola",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 22.454853058000026, "y": -12.077679682999928 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 67,
+        "Location_Name": "Witzenberg, South Africa",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 19.34314727800006, "y": -33.47426528099993 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 68,
+        "Location_Name": "Swellendam, South Africa",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 20.531129837000037, "y": -34.26963014699993 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 69,
+        "Location_Name": "الجوف, Saudi Arabia",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 38.753585815000065, "y": 29.946605289000047 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 70,
+        "Location_Name": "United Arab Emirates",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 53.951883316000078, "y": 24.122941927000056 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 71,
+        "Location_Name": "Farlete, Spain",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -0.53983211499996742, "y": 41.711463308000077 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 72,
+        "Location_Name": "Mauritius",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 57.599258423000038, "y": -20.246414542999958 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 73,
+        "Location_Name": "Acharacle, Scotland",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -6.1360359189999372, "y": 56.737826387000041 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 74,
+        "Location_Name": "Sudan",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 26.828613281000059, "y": 17.721872158000053 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 75,
+        "Location_Name": "Sudan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 27.281799316000047, "y": 17.909448258000054 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 76,
+        "Location_Name": "South Sudan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 17.529630661000056, "y": 12.769323125000028 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 77,
+        "Location_Name": "Ethiopia",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 26.951576470000077, "y": 9.1250261500000533 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 78,
+        "Location_Name": "Nambia",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 16.58403396600005, "y": -18.749903434999965 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 79,
+        "Location_Name": "Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 137.25382805100003, "y": -27.859452491999946 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 80,
+        "Location_Name": "Peyto Lake, Canada",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -116.52189738299995, "y": 51.714014348000035 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 81,
+        "Location_Name": "Mount St. Helens",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -122.18994140499996, "y": 46.201695904000076 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 82,
+        "Location_Name": "Kazakhstan",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 64.849891663000051, "y": 44.959817958000031 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 83,
+        "Location_Name": "مصيرة, Oman",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 58.834834097000055, "y": 20.499054233000038 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 84,
+        "Location_Name": "Gateway Arch and Busch Stadium, St. Louis, Missouri, USA",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -90.189267396999981, "y": 38.623375248000059 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 87,
+        "Location_Name": "Donegal, Ireland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -8.136706352349611, "y": 55.148077038421008 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 88,
+        "Location_Name": "Tucson, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -110.85417506561596, "y": 32.170281710027893 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 89,
+        "Location_Name": "Siyathemba, South Africa",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 23.132529259718602, "y": -28.770118398183232 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 90,
+        "Location_Name": "Rugin, Nepal",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 81.695548291484286, "y": 29.600019281978771 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 91,
+        "Location_Name": "Center-Pivot Agriculture Fields, Colorado, USA",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -106.07849120769389, "y": 37.709356134349591 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 92,
+        "Location_Name": "Center-Pivot Agriculture Fields, Colorado, USA",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -106.07849120769389, "y": 37.709356134349591 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 100,
+        "Location_Name": "Qo'ng'irot, Uzbekistan",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": 58.6264801025553, "y": 45.142457180556846 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 111,
+        "Location_Name": "Russia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 42.592492103062206, "y": 46.322600866945223 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 112,
+        "Location_Name": "Papua New Guinea",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 141.54639244211475, "y": -6.9105359812075378 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 113,
+        "Location_Name": "Papua New Guinea",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 141.54639244211475, "y": -6.9105359812075378 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 114,
+        "Location_Name": "Namatjira, Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 132.30560302329738, "y": -23.81502971369018 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 115,
+        "Location_Name": "Lake Eyre, Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 137.21494674557746, "y": -29.246865022927913 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 116,
+        "Location_Name": "Tierra Amarilla, Chile",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -70.05972864954083, "y": -27.695450791644848 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 118,
+        "Location_Name": "Skaftafellsjökull glacier, Iceland",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -17.200469970705026, "y": 64.062290304053093 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 119,
+        "Location_Name": "Reykjahlíð, Iceland",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -16.823329925564721, "y": 65.577328473449612 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 120,
+        "Location_Name": "Calzada de los Muertos, Teotihuacán, Mexico",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -98.84594680033463, "y": 19.693576851674734 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 121,
+        "Location_Name": "Munich Airport",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 11.785798072834094, "y": 48.353611127801116 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 122,
+        "Location_Name": "Cristóbal, Panama",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -79.925622940802739, "y": 9.256096347819625 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 123,
+        "Location_Name": "Japan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 144.92786407651298, "y": 43.449491861875025 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 124,
+        "Location_Name": "Amazon",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -66.7590236663073, "y": -4.7475183155707343 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 125,
+        "Location_Name": "北京市西城区会计司胡同, 北京市, China",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 116.39081237057155, "y": 39.916401894456591 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 126,
+        "Location_Name": "Tucson, AZ, USA",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -110.83282475810842, "y": 32.154169490187726 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 127,
+        "Location_Name": "Guitar Forest, Argentina",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -63.985115270439309, "y": -33.867783141746855 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 128,
+        "Location_Name": "الداخلية, Oman",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 57.377471923828921, "y": 22.453552603810117 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 129,
+        "Location_Name": "Lake Konnevesi, Finland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 26.636781693325684, "y": 62.557485347898847 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 130,
+        "Location_Name": "Candelabro, Paracas, Peru",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -76.308808926055178, "y": -13.794536186735534 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 131,
+        "Location_Name": "Nazca Lines, Ica, Peru",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -75.1538389953675, "y": -14.693933992470759 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 132,
+        "Location_Name": "Mississippi River Delta, USA",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -89.903869628907657, "y": 29.30196864333314 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 133,
+        "Location_Name": "Alberta, Canada",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -111.65267944338994, "y": 58.84288538590053 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 134,
+        "Location_Name": "Iran",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 60.219154357363813, "y": 32.08504710531917 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 135,
+        "Location_Name": "Lake Frome, Australia",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 139.4288635253929, "y": -30.685163937659944 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 136,
+        "Location_Name": "Fitzroy River Delta, Australia",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 123.57421874999305, "y": -17.335563522323643 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 137,
+        "Location_Name": "Oombulgurri, Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 127.66542434713772, "y": -14.68232595176147 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138,
+        "Location_Name": "Nemarluk, Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 130.34368515036564, "y": -13.649323105558754 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 139,
+        "Location_Name": "Gregory, Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 131.112771034458, "y": -15.586787384727797 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 140,
+        "Location_Name": "مرزق, Libya",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 12.747831344607913, "y": 25.096170365406202 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 141,
+        "Location_Name": "Baikonur Cosmodrome, Kazakhstan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 63.315882682227041, "y": 45.916168737753253 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 142,
+        "Location_Name": "Baikonur Dual Proton Launch Pad , Kazakhstan",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 63.307310328407262, "y": 45.9654401479578 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 143,
+        "Location_Name": "Volcán Misti, Arequipa, Peru",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -71.410059928628073, "y": -16.298227201310869 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 144,
+        "Location_Name": "Macgillycuddy's Reeks, Co. Kerry, Ireland",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -9.7592926024195528, "y": 52.012828009301273 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 145,
+        "Location_Name": "Solar Star, United States of America",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -118.38798527532475, "y": 34.811676048751586 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 146,
+        "Location_Name": "Ground Zero",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": -74.013100554558932, "y": 40.711731493143432 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 147,
+        "Location_Name": "Niagara Falls, United States of America",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": -79.070244698556948, "y": 43.0847061276036 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 148,
+        "Location_Name": "Mina Yanacocha, Cajamarca, Peru",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -78.534822463956473, "y": -6.9869179958727585 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 149,
+        "Location_Name": "Nevado Huazcarán, Ancash, Peru",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -77.608408922901461, "y": -9.1280292694533447 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 150,
+        "Location_Name": "Niger",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 6.900368928967465, "y": 17.499215878562794 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 151,
+        "Location_Name": "Rhine Falls",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": 8.6152338987538943, "y": 47.678205509814674 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 152,
+        "Location_Name": "Iceland, Landmannalaugar",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -19.05162334431261, "y": 63.963031792935226 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 153,
+        "Location_Name": "Russia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 39.269685746163411, "y": 47.143350461378752 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 154,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 178.75575532619055, "y": -17.893123375668267 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 156,
+        "Location_Name": "Atlanta International Airport, Atlanta, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -84.4261550907604, "y": 33.635738477335558 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 158,
+        "Location_Name": "\"Area 51\", Edwards, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -117.89754867440331, "y": 34.927460130654971 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 159,
+        "Location_Name": "Dragon Map, Paso Robles, United States of America",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -120.94333648654359, "y": 35.7371771377262 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 160,
+        "Location_Name": "Volcano north of Vatnajökull, Iceland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -16.872167587182666, "y": 64.820213294906225 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 161,
+        "Location_Name": "Dyngjujökull, Iceland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -16.744623183615868, "y": 64.785170210700556 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 162,
+        "Location_Name": "Prince Charles Island, Nunavut, Canada",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -75.217208862274035, "y": 67.620203489001327 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 163,
+        "Location_Name": "Gibeon, Namibia",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 16.17784023323107, "y": -25.459336672705344 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 164,
+        "Location_Name": "Lüderitz, Namibia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 15.536384582484963, "y": -25.250984093679044 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 165,
+        "Location_Name": "Gibeon, Namibia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 15.494756698632351, "y": -24.687576298857437 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 166,
+        "Location_Name": "Walvis Bay, Namibia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 15.551705360321769, "y": -23.64873058532681 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 167,
+        "Location_Name": "Central, Botswana",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 25.541839599609233, "y": -20.73042847678121 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 168,
+        "Location_Name": "Algeria",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -2.3797416687007327, "y": 25.854898241394977 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 169,
+        "Location_Name": "Morocco",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -9.7901916503907778, "y": 28.813393375475645 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 170,
+        "Location_Name": "South Sudan",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 33.802571296619369, "y": 5.922770286721228 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 171,
+        "Location_Name": "North Korea",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 125.49830143580073, "y": 39.12704743706383 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 172,
+        "Location_Name": "Northwest Territories, Canada",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -117.66048431397108, "y": 61.7835133871392 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 173,
+        "Location_Name": "Alaska, United States of America",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -141.0544967650797, "y": 60.916083256533256 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 174,
+        "Location_Name": "Angkor Watt",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 103.86640906272196, "y": 13.412569906698035 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 175,
+        "Location_Name": "Lady of the North, Northumberlandia, United Kingdom",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": -1.6278111935778126, "y": 55.088641114815708 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 177,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 148.38649749671623, "y": -40.220174599530225 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 178,
+        "Location_Name": "Santuario Archeológico de Pachacamac, Pachacamac, Peru",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -76.900278920924336, "y": -12.25781821574463 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 179,
+        "Location_Name": "Isles of Scilly",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -6.3118171691468836, "y": 49.965832099145167 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 180,
+        "Location_Name": "Isles of Scilly",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -6.3118171691468836, "y": 49.965832099145167 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 181,
+        "Location_Name": "Victoria Falls, Zimbabwe and Zambia ",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 25.853576659974369, "y": -17.931600308606136 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 182,
+        "Location_Name": "Aswan, Egypt",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 31.624660495481383, "y": 22.392618539513105 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 183,
+        "Location_Name": "Abu Simbel, Aswan, Egypt",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 31.612375973565086, "y": 22.342921238626325 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 184,
+        "Location_Name": "Colesseum and Parco del Colle Oppio , Roma, Italy",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 12.497924566288992, "y": 41.892031064068604 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 185,
+        "Location_Name": "Venezia and Murano, Italy",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 12.345371246320777, "y": 45.442006891032 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 186,
+        "Location_Name": "Firenze, Italy",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 11.253744363801808, "y": 43.770009173004809 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 187,
+        "Location_Name": "Montaña La Malinche, Mexico",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -98.0342674255701, "y": 19.227771524358079 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 188,
+        "Location_Name": "Tunstead Quarry, Derbyshire, United Kingdom",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -1.8474626541135211, "y": 53.262158309291117 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 189,
+        "Location_Name": "Kilimanjaro, Tanzania",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 36.9525146484375, "y": -3.0836085767685706 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 190,
+        "Location_Name": "Tombouctou, Mali",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -3.6378479003906259, "y": 16.112451633107181 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 191,
+        "Location_Name": "Cape Town, South Africa",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 18.444757461554698, "y": -33.932714241556916 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 192,
+        "Location_Name": "Overseas Hwy, Marathon, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -80.894372460423469, "y": 24.787767023249419 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 193,
+        "Location_Name": "Miami, United States of America",
+        "Zoom_Level": 19
+      },
+      "geometry": { "x": -80.224155623974, "y": 25.725696056121848 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 194,
+        "Location_Name": "Botswana",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 26.084547042855956, "y": -20.510238879580839 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 196,
+        "Location_Name": "Platte Mound M, Platteville, United States of America",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -90.407186185861192, "y": 42.763563347076236 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 197,
+        "Location_Name": "Grand Canyon, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -113.85591030178921, "y": 36.060895263880866 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 198,
+        "Location_Name": "Mount Etna, Catania, Italy",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 14.993419647210624, "y": 37.747711222531819 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 199,
+        "Location_Name": "Mount Agung, Bali, Indonesia",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 115.51042556758127, "y": -8.3435666012398624 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 200,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -17.256603241055487, "y": 64.029609787420213 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 201,
+        "Location_Name": "Southernmost tip of Africa, Cape Agulhas, South Africa",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 19.971706868275092, "y": -34.828424130972031 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 202,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 164.41673040296118, "y": -20.143426105648423 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 203,
+        "Location_Name": "Port Hercules, Monaco",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 7.4265968802395053, "y": 43.735038213567179 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 204,
+        "Location_Name": "Golden Gate Bridge, San Francisco",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -122.47298148305804, "y": 37.81887318000549 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 205,
+        "Location_Name": "Iran",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 60.236502881014857, "y": 32.084410792692083 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 206,
+        "Location_Name": "Hoover Dam, Boulder City, United States of America",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -114.73999862376652, "y": 36.014298250957104 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 208,
+        "Location_Name": "Isla Amantani, Lake Titicaca, Puno, Peru",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -69.707018131411644, "y": -15.668205328079756 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 209,
+        "Location_Name": "Iquitos, Peru",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": -73.252716064452855, "y": -3.7464119916730856 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 210,
+        "Location_Name": "Trà Vinh, Viet Nam",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 106.42112731933663, "y": 9.8105632126825082 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 211,
+        "Location_Name": "Harrisburg, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -123.23965072694929, "y": 44.330479269791986 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 212,
+        "Location_Name": "Gustavus, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -136.34264946053196, "y": 59.0822107142876 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 213,
+        "Location_Name": "Niafounké, Mali",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -3.5994064808199959, "y": 16.111889879406135 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 214,
+        "Location_Name": "Sandbanks, United Kingdom",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -1.9578838348382019, "y": 50.689742752355855 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 215,
+        "Location_Name": "Place Charles de Gaulle, Paris, France",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 2.294833660129235, "y": 48.873663314094216 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 216,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 179.13791656392038, "y": -17.77062372502283 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 217,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 179.17730202363137, "y": -17.794034255116166 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 218,
+        "Location_Name": "Iota, Louisiana, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -92.459049224314668, "y": 30.311662400389729 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 219,
+        "Location_Name": "Minack Theatre, United Kingdom",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -5.6528949736349521, "y": 50.0413312814897 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 220,
+        "Location_Name": "Sacred City of Caral-Supe, Peru",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -77.521859401275051, "y": -10.89306943526263 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 221,
+        "Location_Name": "Níjar, Spain, interesting circles and Elipses",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -2.1888971328727935, "y": 36.798804338546333 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 222,
+        "Location_Name": "Tasman Glacier, New Zealand",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 170.16809463586682, "y": -43.680039234684507 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 223,
+        "Location_Name": "Winter Haven, Florida, United States of America",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -81.747379302942647, "y": 28.0608469273092 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 224,
+        "Location_Name": "Yakutat, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -140.32150268625779, "y": 59.956385392047096 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 225,
+        "Location_Name": "Bedourie, Australia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 139.62880611339097, "y": -24.1294827442909 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 226,
+        "Location_Name": "United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -141.28686189565542, "y": 59.9514432530035 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 227,
+        "Location_Name": "Chinsali, Zambia",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 31.87613368154728, "y": -10.426069498835872 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 228,
+        "Location_Name": "Yemen",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 45.972504615518758, "y": 15.320735862792471 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 229,
+        "Location_Name": "Pakistan",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 70.74804782826304, "y": 24.327545797039967 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 230,
+        "Location_Name": "Kaktovik, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -142.25211375146461, "y": 69.84250961733477 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 231,
+        "Location_Name": "Іванківський район, Ukraine",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 30.410842895440489, "y": 51.220808703200561 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 232,
+        "Location_Name": "Pukaki, New Zealand",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 170.17478942957729, "y": -44.1824809390572 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 234,
+        "Location_Name": "Great Barrier Reef",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 145.85419177928432, "y": -16.321272068550833 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 235,
+        "Location_Name": "Sri Lanka",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 92.861316218581322, "y": 12.914331482097765 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 236,
+        "Location_Name": "Hantam, South Africa",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 19.806804656974016, "y": -32.082174582566076 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 237,
+        "Location_Name": "Hantam, South Africa",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 19.846737385263314, "y": -31.643654462612123 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 238,
+        "Location_Name": "Fields",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 39.878826141206311, "y": 46.426853988560865 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 239,
+        "Location_Name": "The North Peak District, United Kingdom",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -1.7686271667482445, "y": 53.450646959898371 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 240,
+        "Location_Name": "Zitlaltepec de Trinidad Sánchez, Mexico",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -97.934017181684766, "y": 19.183354080031847 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 241,
+        "Location_Name": "Katze Dam, Lesotho",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 25.505876539495379, "y": -30.623958145753072 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 242,
+        "Location_Name": "Victoria Falls, Hwange, Zimbabwe",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 25.855475664969987, "y": -17.9244088526386 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 243,
+        "Location_Name": "Niagara Falls, Canada",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -79.075427065524678, "y": 43.079244517740463 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 244,
+        "Location_Name": "Ngorongoro crater, Arusha, Tanzania",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 35.586090087890561, "y": -3.0537823277408869 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 245,
+        "Location_Name": "Queensland, Australia",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 151.64703369139934, "y": -21.179609858279449 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 246,
+        "Location_Name": "Nurburgring, Nürburg, Germany",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 6.9443249701421372, "y": 50.334542116513632 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 247,
+        "Location_Name": "Wadi Rum, Jordan",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 35.472493171593847, "y": 29.643621368834058 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 248,
+        "Location_Name": "Jetée des Eaux-Vives, Genève, Switzerland",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": 6.1561743025260585, "y": 46.2071246637961 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 249,
+        "Location_Name": "Bern, Switzerland",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 7.4510693550802456, "y": 46.947750100495476 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 250,
+        "Location_Name": "Almeria",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -2.7064990997302947, "y": 36.746209071506541 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 251,
+        "Location_Name": "Zaatari Refugee Camp, Jordan",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 36.3293623910087, "y": 32.293671838935047 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 252,
+        "Location_Name": "Westbury White Horse, Wiltshire, Britain",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": -2.1469044687146375, "y": 51.263660382514537 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 253,
+        "Location_Name": "Iguazy Falls, Argentina",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -54.440839291124433, "y": -25.687354365668931 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 254,
+        "Location_Name": "Arecibo Radio Telescope, Puerto Rico",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -66.767778396427687, "y": 18.343140537759563 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 255,
+        "Location_Name": "Egypt",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 31.821277140330345, "y": 30.150174191098483 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 256,
+        "Location_Name": "El Farito Lighthouse, Miami",
+        "Zoom_Level": 19
+      },
+      "geometry": { "x": -80.1552524029518, "y": 25.666539874121789 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 257,
+        "Location_Name": "Ochopee, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -81.052923203929936, "y": 25.148499919773521 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 258,
+        "Location_Name": "Antarctica",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 90.201873779259657, "y": -66.710734709599947 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 259,
+        "Location_Name": "Tesla Gigafactory 1, Sparks, Nevada, USA",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -119.43931460493897, "y": 39.537319184241845 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 260,
+        "Location_Name": "Fallon, Nevada, USA",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -119.17489171139158, "y": 39.380495585687648 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 261,
+        "Location_Name": "Colca Canyon, Arequipa, Peru",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -71.88086271266431, "y": -15.602515553868157 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 262,
+        "Location_Name": "Karlsruhe (Hardtwald), Germany",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 8.4053564071931071, "y": 49.014976007152718 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 263,
+        "Location_Name": "Gorak Shep, Nr. Everest Base Camp, Nepal",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 86.829135429111446, "y": 27.980924529488608 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 264,
+        "Location_Name": "Very Large Telescope (VLT), Antofagasta, Chile",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -70.396903753933245, "y": -24.632008892170138 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 265,
+        "Location_Name": "Cádiz, Spain",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -6.2972474098790316, "y": 36.532545073710615 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 266,
+        "Location_Name": "Glennallen, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -146.44517160293321, "y": 61.951554398826225 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 267,
+        "Location_Name": "Gosaba, India",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 88.966999396211477, "y": 21.70950945948405 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 268,
+        "Location_Name": "Jonai, India",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 95.378719907893739, "y": 27.800288822352979 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 269,
+        "Location_Name": "Балқаш ауданы, Kazakhstan",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 74.386853945981187, "y": 45.944456275744791 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 270,
+        "Location_Name": "Dunstable Road, Dunstable, United Kingdom",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -0.55468329170366837, "y": 51.84847326108148 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 271,
+        "Location_Name": "Amazonas, Brazil",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -66.851119995117145, "y": -4.964061494792058 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 272,
+        "Location_Name": "巴音郭楞蒙古自治州, China",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": 86.674713164097682, "y": 40.611893505508831 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 273,
+        "Location_Name": "新疆维吾尔自治区巴音郭楞蒙古自治州尉犁县, 巴音郭楞蒙古自治州, China",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 86.636355420017225, "y": 40.635103355046141 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 274,
+        "Location_Name": "新疆维吾尔自治区巴音郭楞蒙古自治州若羌县, 巴音郭楞蒙古自治州, China",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 90.340756435826677, "y": 41.167019858752873 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 275,
+        "Location_Name": "Alaska",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -162.921272286325, "y": 65.839875283142462 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 276,
+        "Location_Name": "Alaska",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -160.74285507444094, "y": 67.102597294462115 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 277,
+        "Location_Name": "Diré, Mali",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -3.632580041886305, "y": 16.231826782165392 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 278,
+        "Location_Name": "Sudan",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 31.656846998079697, "y": 12.945764606049403 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 279,
+        "Location_Name": "Bingham Canyon copper mine, Utah, USA",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -112.14270830258091, "y": 40.520470916120061 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 280,
+        "Location_Name": "Porto Santo, Portugal",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -16.337805033124788, "y": 33.057041886412982 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 281,
+        "Location_Name": "الريان, Qatar",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 51.177721020063437, "y": 25.010354478329468 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 282,
+        "Location_Name": "United Arab Emirates",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 53.134717939534077, "y": 24.123725275976728 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 283,
+        "Location_Name": "Katze Dam, LHWP, Lesotho",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 28.50763320738217, "y": -29.337959918521804 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 284,
+        "Location_Name": "مرزق, Libya",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 11.711854934691921, "y": 24.885930394778111 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 285,
+        "Location_Name": "مرزق, Libya",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 11.578989028929939, "y": 24.904148544382078 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 286,
+        "Location_Name": "Pakistan",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 75.634217262970481, "y": 35.599688512141554 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 287,
+        "Location_Name": "Northwest Territories, Canada",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -125.19229888801323, "y": 67.603743596727 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 288,
+        "Location_Name": "False Pass, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -164.42938142238549, "y": 54.643127338417365 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 289,
+        "Location_Name": "Chile Chico, Chile",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -73.194687888852769, "y": -46.727431496485131 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 290,
+        "Location_Name": "Montenegro",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 19.310029508778147, "y": 42.271361618286882 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 291,
+        "Location_Name": "Antarctic",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 107.96401973347587, "y": -66.522015832393663 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 292,
+        "Location_Name": "Walnut Creek, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -122.07441329845054, "y": 37.933953493702035 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 293,
+        "Location_Name": "Gatway of India, Mumbai, India",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 72.8387331915583, "y": 18.922256778165586 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 294,
+        "Location_Name": "Sri Ram Sethu, India",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 79.5465087890626, "y": 9.1187073350901571 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 295,
+        "Location_Name": "Ambatofinandrahana, Madagascar",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 45.963749883760705, "y": -20.967190303526376 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 296,
+        "Location_Name": "Belo sur Tsiribihina, Madagascar",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 44.806966781493522, "y": -19.651277170501647 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 297,
+        "Location_Name": "Mayotte",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 44.885421730578138, "y": -12.835189874623326 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 298,
+        "Location_Name": "West Berkshire, United Kingdom",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -1.5363049506892472, "y": 51.548149812839441 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 299,
+        "Location_Name": "Ballymagarvey, Navan, Ireland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -6.4840364456385426, "y": 53.619877579297821 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 300,
+        "Location_Name": "Vegueta, Peru",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -77.578604225828954, "y": -10.880173681860297 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 301,
+        "Location_Name": "Tide Pools, Porto Moniz, Madeira Island",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -17.170815468387186, "y": 32.869238332830456 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 302,
+        "Location_Name": "Ponta do Pargo Lighthouse, Ponta do Pargo, Madeira Island",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -17.262954712468602, "y": 32.814405830444429 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 303,
+        "Location_Name": "Oasis Laguna Huacachina, Ica, Peru",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -75.762727270356564, "y": -14.087802022471127 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 304,
+        "Location_Name": "Galeão International Airport, Rio de Janeiro, Brazil ",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -43.250427246090993, "y": -22.805696773792285 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 305,
+        "Location_Name": "Northumberland, United Kingdom",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -1.6260516643260117, "y": 55.088972681217605 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 306,
+        "Location_Name": "Moray, Provincia de Urubamba, Cusco, Peru",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -72.196177849531722, "y": -13.330386407158883 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 307,
+        "Location_Name": "和田地区, China",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 80.374946594479781, "y": 38.748058944295813 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 308,
+        "Location_Name": "Dugway, United States of America",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -112.79578329584606, "y": 39.909411168098288 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 309,
+        "Location_Name": "Death Valley, United States of America",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -117.09078779844161, "y": 36.7705191362378 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 310,
+        "Location_Name": "Wizard Island, Crater Lake National Park, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -122.14742045795492, "y": 42.939380220680938 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 311,
+        "Location_Name": "Port of Long Beach, United States of America",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -118.25147190157854, "y": 33.7267216284977 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 312,
+        "Location_Name": " Circuit of the Americas Blvd, Del Valle, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -97.634924617476216, "y": 30.135685114407167 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 313,
+        "Location_Name": "California City, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -117.7845096577373, "y": 35.175001007187106 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 314,
+        "Location_Name": "Pokhara, Nepal",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 83.959751128889721, "y": 28.215474605106614 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 315,
+        "Location_Name": "Esri Headquarters, Redlands, United States of America",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": -117.19559720164015, "y": 34.057498087748947 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 316,
+        "Location_Name": "Nipton, United States of America",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -115.45193031287003, "y": 35.535302449850477 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 317,
+        "Location_Name": "Dodgertown, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -118.23997432855059, "y": 34.073530871393388 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 318,
+        "Location_Name": "Crescent Dunes Solar Energy Project, Tonopah, United States of America",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -117.36464068926615, "y": 38.238816449581776 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 319,
+        "Location_Name": "المزيونة, Oman",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 52.430929176622435, "y": 18.830192837690404 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 320,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -17.554821968241608, "y": 63.785234973641863 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 321,
+        "Location_Name": "Durham, Australia",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 141.56312942636936, "y": -27.439250155349598 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 322,
+        "Location_Name": "Tongariki, Easter Island (Rapa Nui), Chile",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -109.27243344771748, "y": -27.126191179823696 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 323,
+        "Location_Name": "Tiahuanacu, Bolivia",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -68.673075910354129, "y": -16.555244426201781 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 324,
+        "Location_Name": "Grand Prismatic Spring, Yellowstone National Park, United States of America",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": -110.83817075033821, "y": 44.525083085926838 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 325,
+        "Location_Name": "Erin, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -76.711603293053173, "y": 42.1580425474098 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 326,
+        "Location_Name": "Botswana",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 24.949007034342507, "y": -17.808228250780733 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 327,
+        "Location_Name": "Argentina",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -67.971701627944128, "y": -25.560828265311571 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 328,
+        "Location_Name": "Antarctica",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": 166.89983367921099, "y": -72.924777466592261 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 329,
+        "Location_Name": "Leaning Tower, Piazza del Duomo, Pisa, Italy",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": 10.39531946023409, "y": 43.7232868666592 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 330,
+        "Location_Name": "Meda, Australia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 123.95796775667124, "y": -17.084742887880495 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 331,
+        "Location_Name": "Réunion",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 55.538635253903486, "y": -21.132350817705305 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 332,
+        "Location_Name": "吉林省白城市洮南市, 白城市, China",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 122.78361087736549, "y": 45.197098944862219 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 333,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 148.21475035819074, "y": -40.28078616604904 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 334,
+        "Location_Name": "وادي الحياة, Libya",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 11.394281387374168, "y": 25.818223269833798 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 335,
+        "Location_Name": "Krakatoa Volcano, Indonesia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 105.42630672439594, "y": -6.1037087282466134 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 336,
+        "Location_Name": "Popocatepelt Volcano, Atlautla, Mexico",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -98.629211425406325, "y": 19.020999062495704 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 337,
+        "Location_Name": "Mount Mayon, Ligao, Philippines",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 123.68665694510049, "y": 13.254148458896745 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 338,
+        "Location_Name": "Dar es Salaam, Tanzania",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 39.272097586322339, "y": -6.7474386337000851 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 339,
+        "Location_Name": "St-Augustin, Canada",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -58.651156432334218, "y": 51.299268068700869 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 340,
+        "Location_Name": "Potosí Almagro, Argentina",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -58.424220081916722, "y": -34.607161922033292 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 341,
+        "Location_Name": "Cerro Tunupa, Oruro, Bolivia",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -67.62943267822493, "y": -19.818390093845647 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 342,
+        "Location_Name": "Vatican City, Roma, Italy",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 12.459558248368792, "y": 41.901702095507538 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 343,
+        "Location_Name": "Sudan",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 32.024459838865631, "y": 18.924311948112692 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 344,
+        "Location_Name": "العركوب, Morocco",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -15.671052932733245, "y": 23.891488110487657 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 345,
+        "Location_Name": "Gibeon, Namibia",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 14.833881854830095, "y": -24.294136214064316 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 346,
+        "Location_Name": "Ireland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -8.0243110655757786, "y": 55.031340250565187 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 347,
+        "Location_Name": "vacation ON",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 16.244337559244755, "y": 43.51503909605686 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 348,
+        "Location_Name": "Oregon Forests, Oregon, United States",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -123.72450828706752, "y": 43.10703016779091 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 349,
+        "Location_Name": "Lord Howe Island, Australia",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 159.07443519784474, "y": -31.537770609658526 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 350,
+        "Location_Name": "Egmont National Park, New Zealand",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 174.06188964684475, "y": -39.288674903912444 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 351,
+        "Location_Name": "Dry Tortugas National Park, United States of America",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -82.868523358418244, "y": 24.627673808657036 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 352,
+        "Location_Name": "Lac Manicouagan, Canada",
+        "Zoom_Level": 9
+      },
+      "geometry": { "x": -68.719482421875, "y": 51.434320273775626 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 353,
+        "Location_Name": "تمنراست, Algeria",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 1.9734191894531194, "y": 26.089471600518252 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 354,
+        "Location_Name": "Niger",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 6.21555805207102, "y": 17.700225520807805 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 355,
+        "Location_Name": "Egypt",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 30.626063346488529, "y": 31.388076562694735 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 356,
+        "Location_Name": "Western Australia, Australia",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 128.11431884760597, "y": -22.574389321897321 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 357,
+        "Location_Name": "Discovery Bay, United States of America",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -121.59740926255118, "y": 37.909948397381591 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 358,
+        "Location_Name": "Anbukhaireni, Nepal",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 84.493618010443342, "y": 27.926189655500615 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 359,
+        "Location_Name": "Rara, Nepal",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 82.093663215772892, "y": 29.529527795537213 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 360,
+        "Location_Name": "France",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -1.5112853050210462, "y": 48.636049572055718 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 361,
+        "Location_Name": "Lécera, Spain",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -0.74763894080999183, "y": 41.207584945960086 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 362,
+        "Location_Name": "United Arab Emirates",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": 53.820648193338222, "y": 23.071519586445866 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 363,
+        "Location_Name": "Sandals Resort",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -61.88836169471422, "y": 17.063372516319614 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 364,
+        "Location_Name": "Pier St, Port Albert, Australia",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 146.75309664814139, "y": -38.684848162388178 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 365,
+        "Location_Name": "Tanbar, Australia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 141.5773858951159, "y": -26.222806914972324 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 366,
+        "Location_Name": "Australia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 141.61746025781903, "y": -26.221336261701953 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 367,
+        "Location_Name": "Russia",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 161.69703483608237, "y": 54.672639830761469 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 368,
+        "Location_Name": "Chile",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": -68.456325530974425, "y": -23.562098947835942 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 369,
+        "Location_Name": "Chile",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -68.419225218020273, "y": -23.546048317892591 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 370,
+        "Location_Name": "Khongor, Mongolia",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 105.95132229306957, "y": 49.463672005200223 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 371,
+        "Location_Name": "Fuego and Acatenango Volcanoes, Guatemala",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -90.878648757593027, "y": 14.482719092827189 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 372,
+        "Location_Name": "Andros, Bahamas",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -77.734494211674274, "y": 24.60055296672142 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 373,
+        "Location_Name": "المضيبي, Oman",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 58.358645438437385, "y": 22.513785943574412 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 374,
+        "Location_Name": "Tucson, United States of America",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -110.82235185365714, "y": 32.153499017798325 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 375,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 92.779970920227612, "y": 12.864762569940897 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 376,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 96.920874248512021, "y": 17.241892608662365 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 377,
+        "Location_Name": "Old Russian Bombing Target - Afghanistan",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 62.32326150638135, "y": 33.449628881414078 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 378,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 92.911591531742218, "y": 13.003585552883614 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 379,
+        "Location_Name": "Myanmar",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 95.188765527775985, "y": 15.974098908178478 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 380,
+        "Location_Name": "Eastern Oregon and Western Oregon Collide",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -121.33365632033113, "y": 45.461655747192289 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 381,
+        "Location_Name": "Trinitapoli, Italy",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 16.030597686801052, "y": 41.405881157073324 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 382,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -17.54246234881294, "y": 63.822982110951891 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 383,
+        "Location_Name": "Joostenbergvlakte, South Africa",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 18.733363151548012, "y": -33.829160833899628 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 384,
+        "Location_Name": "DreamWorld, Margate",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 1.3773787021848671, "y": 51.38506989568188 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 385,
+        "Location_Name": "Table Mountain, Cape Town, South Africa",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 18.40162754045825, "y": -33.958516207347159 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 386,
+        "Location_Name": "Jirón Manco Capac, Callao, Peru",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -77.14919329554327, "y": -12.054550501569761 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 387,
+        "Location_Name": "Хабаровский край, Russia",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 140.14606475828759, "y": 51.708097711013139 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 388,
+        "Location_Name": "أخفنير, Morocco",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -12.280609011742953, "y": 28.004501259200524 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 389,
+        "Location_Name": "إميلشيل, Morocco",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -5.6746959686273382, "y": 32.179135877284153 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 390,
+        "Location_Name": "Amposta, Spain",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 0.67708492046226121, "y": 40.68534965666079 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 391,
+        "Location_Name": "Hong Kong",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 114.12837981781546, "y": 22.329285860384285 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 392,
+        "Location_Name": "Vallabhipur, India",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 72.239788882582744, "y": 21.874832478723665 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 393,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 72.3599822701135, "y": 21.598616185536248 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 394,
+        "Location_Name": "Anna Creek, Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 136.76343172816914, "y": -27.943535121148091 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 395,
+        "Location_Name": "مطار دبي الدولي, United Arab Emirates",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 55.3751707057923, "y": 25.248393184765941 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 396,
+        "Location_Name": "San Pedro de Atacama, Chile",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -68.322601318383335, "y": -23.511422639869359 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 397,
+        "Location_Name": "Ямало-Ненецкий автономный округ, Russia",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 65.150985717753372, "y": 65.62103064039556 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 398,
+        "Location_Name": "السليل, Saudi Arabia",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 45.5234920829077, "y": 19.555675428615878 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 399,
+        "Location_Name": "Somewhere in the Milky Way",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 40.15897750848913, "y": 15.756405910974213 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 400,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 37.794964312180795, "y": 46.589629437292544 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 401,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 50.251421929432809, "y": 45.044297416188982 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 402,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": 48.078231811512417, "y": 46.807109594960458 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 403,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 47.770099639980771, "y": 46.871399518575942 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 404,
+        "Location_Name": "খুলনা, Bangladesh",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 89.5900726318375, "y": 22.148933713122929 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 405,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": 50.778856873510271, "y": 26.068355560714149 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 406,
+        "Location_Name": "Andros, Bahamas",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -77.789977546241914, "y": 23.904111435113311 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 407,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -16.871716979293613, "y": 64.823595525681 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 408,
+        "Location_Name": "Property Lines (Western Oregon)",
+        "Zoom_Level": 18
+      },
+      "geometry": { "x": -123.57732112365288, "y": 44.489107008351475 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 409,
+        "Location_Name": "Hoover Dam, United States of America",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -114.73542595247808, "y": 36.031609417336732 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 410,
+        "Location_Name": "Las Vegas, United States of America",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": -115.15268325809708, "y": 36.161993285499413 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 411,
+        "Location_Name": "Copacabana Beach",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -43.17071091273948, "y": -22.952041106990425 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 412,
+        "Location_Name": "Ponte Rio-Niterói",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -43.168308735777664, "y": -22.871094217533148 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 413,
+        "Location_Name": "Barlovento, La Palma, Spain",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -17.805640697844993, "y": 28.810714187025532 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 414,
+        "Location_Name": "Cuajone copper mine, Moquegua, Peru",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -70.734400749107934, "y": -17.050753441763685 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 415,
+        "Location_Name": "Fields of Italy",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 13.54743003835698, "y": 41.996226874442733 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 416,
+        "Location_Name": "Palazzo della Venaria Reale",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 7.6196193694530514, "y": 45.135804918604151 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 417,
+        "Location_Name": "مصيرة, Oman",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 58.721795082489628, "y": 20.313620288326934 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 418,
+        "Location_Name": "Egypt",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 30.731369020660956, "y": 28.854386707035729 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 419,
+        "Location_Name": "Auvere, Estonia",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 27.940989723556967, "y": 59.282446284629167 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 420,
+        "Location_Name": " W Campus Cir, Fort Lauderdale, United States of America",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -80.194101342610509, "y": 26.113119934602796 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 421,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -77.86989212051806, "y": 25.673015066310793 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 422,
+        "Location_Name": "Emu Flat, Australia",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 122.22272872949951, "y": -31.180276758456689 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 423,
+        "Location_Name": "Francois Peron National Park, Australia",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 113.72806548938915, "y": -25.964102491078584 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 424,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -18.878116609092714, "y": 63.575240258086168 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 425,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -18.848526479235574, "y": 63.516107966222123 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 426,
+        "Location_Name": "Pakistan",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": 69.839830398701892, "y": 26.095291393135945 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 427,
+        "Location_Name": "Pakistan",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 62.413330078039344, "y": 25.499763269626659 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 428,
+        "Location_Name": "Andros, Bahamas",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -77.777023315586646, "y": 23.943860368899735 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 429,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -76.856231689454219, "y": 23.50260737673014 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 430,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 14
+      },
+      "geometry": { "x": -71.814451217304054, "y": 21.721749675736213 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 431,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 123.54263305578894, "y": -17.436373485471183 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 432,
+        "Location_Name": "Here be dragons...",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": 131.73596623004988, "y": 45.355032869697929 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 433,
+        "Location_Name": "新疆维吾尔自治区和田地区墨玉县, 和田地区, China",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 80.849241569934165, "y": 38.806636519853036 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 434,
+        "Location_Name": "Mopti, Mali",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -3.8980865478515807, "y": 15.683534728244641 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 435,
+        "Location_Name": "أدرار, Mauritania",
+        "Zoom_Level": 10
+      },
+      "geometry": { "x": -11.392822265625027, "y": 21.103078502607147 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 436,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -14.324197769083669, "y": 65.649052613547852 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 437,
+        "Location_Name": "Siha, Tanzania",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 37.134668821807722, "y": -2.9513864285306273 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 438,
+        "Location_Name": "日喀则市, China",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 85.527319907651275, "y": 28.69376872780467 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 439,
+        "Location_Name": "الواحات, Libya",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": 22.061233520506587, "y": 27.739909530894792 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 440,
+        "Location_Name": "Talandji, Australia",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 114.67928409509582, "y": -21.887883113796594 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 441,
+        "Location_Name": "Columbia-Shuswap, Canada",
+        "Zoom_Level": 16
+      },
+      "geometry": { "x": -117.47131347589836, "y": 51.578623051276558 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 442,
+        "Location_Name": "Columbia-Shuswap, Canada - Glacially scoured bedrock",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -117.96404593663563, "y": 51.63105463593034 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 443,
+        "Location_Name": "Amazonas, Brazil",
+        "Zoom_Level": 11
+      },
+      "geometry": { "x": -66.795501708984659, "y": -2.5771411226723377 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 444,
+        "Location_Name": "Huara, Chile",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": -69.85852000899213, "y": -19.380056077082912 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 445,
+        "Location_Name": "Garron Point, Co. Antrim, N.Ireland",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -6.0102510452366484, "y": 55.040626622926382 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 446,
+        "Location_Name": "New Caledonia",
+        "Zoom_Level": 17
+      },
+      "geometry": { "x": 167.41771044888893, "y": -22.555933364746885 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 447,
+        "Location_Name": "Bangladesh Distributaries",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 91.237506866249277, "y": 22.461802035285967 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 448,
+        "Location_Name": "Hole in the Ground Impact Crater, Oregon",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": -121.19663952403153, "y": 43.410501762020381 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 449,
+        "Location_Name": "Windorah, Australia",
+        "Zoom_Level": 12
+      },
+      "geometry": { "x": 142.48922348495566, "y": -25.660250381771014 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 450,
+        "Location_Name": "Schwangau, Germany",
+        "Zoom_Level": 15
+      },
+      "geometry": { "x": 10.721712112443479, "y": 47.586831220086907 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 451,
+        "Location_Name": "Iceland",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": -19.711189270048255, "y": 64.55168587992172 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 452,
+        "Location_Name": "Australia",
+        "Zoom_Level": 13
+      },
+      "geometry": { "x": 123.5912418295099, "y": -16.279708803091985 }
+    }
+  ]
+}
