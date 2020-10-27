@@ -181,7 +181,7 @@
   };
 
   // Wait until the locations are loaded and then create the map and start the tour
-  $: if (locations) {
+  $: if (locations && locations.length > 0) {
     createMap();
   }
 </script>
