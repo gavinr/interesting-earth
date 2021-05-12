@@ -13,7 +13,7 @@
     "esri-loader": "^2.16.0",
     "gh-pages": "^3.1.0",
     "leaflet": "^1.7.1",
-    "postcss": "^8.1.1",
+    "postcss": "^8.2.10",
     "postcss-import": "^12.0.1",
     "postcss-load-config": "^3.0.0",
     "rollup": "^2.30.0",
