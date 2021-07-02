@@ -24,6 +24,22 @@
       })
       .then((data) => {
         const shuffledArray = [...data.features];
+
+        // custom added locations
+        shuffledArray.push({
+          attributes: {
+            Location_Name: "Tangalooma Wrecks",
+            OBJECTID: shuffledArray.length + 1,
+            Reported: 0,
+            Status: "Approved",
+            Zoom_Level: 19,
+          },
+          geometry: {
+            x: 153.3684,
+            y: -27.163,
+          },
+        });
+
         shuffleArray(shuffledArray);
         locations = shuffledArray.map((feature, i) => ({
           id: feature.attributes.OBJECTID,
@@ -36,6 +52,54 @@
       });
   });
 </script>
+
+<main>
+  <div class="topWrapper">
+    <div>
+      <h1>Interesting Earth</h1>
+
+      <p class="subtitle">
+        Showing the Earth's most interesting locations from the
+        <a
+          href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg"
+          target="_blank">worldview chrome extension</a
+        >.
+      </p>
+    </div>
+    <div style="flex-grow: 1; text-align: right;">
+      <div>
+        {#if w > 768}
+          <a
+            href="#"
+            on:click={() => {
+              gridMode = !gridMode;
+            }}
+            >View
+            {gridMode !== true ? "Grid" : "Hopper"}</a
+          >
+          -
+        {/if}
+        <a
+          href="#"
+          on:click={() => {
+            Swal.fire({
+              title: "About Interesting Earth",
+              html: 'Randomly cycling through the most interesting locations in the world (featured in the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg" target="_blank">Worldview Chrome extension</a>). Check out both the grid and hopper mode!<br /><br />Built by <a href="https://gavinr.com" target="_blank">Gavin Rehkemper</a>.<br /><br /><strong>If you appreciate this page, please <a class="github-button" href="https://github.com/gavinr/interesting-earth" aria-label="Star gavinr/interesting-earth on GitHub">star this project on GitHub</a>.</strong>',
+              confirmButtonText: "OK",
+              backdrop: false,
+            });
+          }}>About</a
+        >
+      </div>
+    </div>
+  </div>
+
+  {#if gridMode === true}
+    <Grid {locations} />
+  {:else}
+    <Hopper {locations} basemap="satellite" />
+  {/if}
+</main>
 
 <style>
   h1 {
@@ -55,48 +119,3 @@
     display: flex;
   }
 </style>
-
-<main>
-  <div class="topWrapper">
-    <div>
-      <h1>Interesting Earth</h1>
-
-      <p class="subtitle">
-        Showing the Earth's most interesting locations from the
-        <a
-          href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg"
-          target="_blank">worldview chrome extension</a>.
-      </p>
-    </div>
-    <div style="flex-grow: 1; text-align: right;">
-      <div>
-        {#if w > 768}
-          <a
-            href="#"
-            on:click={() => {
-              gridMode = !gridMode;
-            }}>View
-            {gridMode !== true ? 'Grid' : 'Hopper'}</a>
-          -
-        {/if}
-        <a
-          href="#"
-          on:click={() => {
-            Swal.fire({
-              title: 'About Interesting Earth',
-              html:
-                'Randomly cycling through the most interesting locations in the world (featured in the <a href="https://chrome.google.com/webstore/detail/worldview/aflbpeobpgdpibcfhkkjhaonbbpkmefg" target="_blank">Worldview Chrome extension</a>). Check out both the grid and hopper mode!<br /><br />Built by <a href="https://gavinr.com" target="_blank">Gavin Rehkemper</a>.<br /><br /><strong>If you appreciate this page, please <a class="github-button" href="https://github.com/gavinr/interesting-earth" aria-label="Star gavinr/interesting-earth on GitHub">star this project on GitHub</a>.</strong>',
-              confirmButtonText: 'OK',
-              backdrop: false,
-            });
-          }}>About</a>
-      </div>
-    </div>
-  </div>
-
-  {#if gridMode === true}
-    <Grid {locations} />
-  {:else}
-    <Hopper {locations} basemap="satellite" />
-  {/if}
-</main>

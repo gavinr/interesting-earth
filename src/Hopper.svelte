@@ -10,7 +10,7 @@
   export let title = "";
   export let locations;
 
-  let currentIndex = 0;
+  let currentIndex = -1;
   let playing = true;
   let map, view;
   let zoomingOrAboutToZoom = false;
@@ -27,6 +27,7 @@
   let viewContainer;
 
   const zoomTo = (index) => {
+    console.log("zoomTo", index);
     if (!view.interacting) {
       const arrItem = locations[index];
       if (arrItem && title !== "") {
@@ -85,7 +86,7 @@
     if (!zoomingOrAboutToZoom) {
       let whereToMove = [101, 98];
       if (view.camera.tilt > 80) {
-        whereToMove = [102, 100];
+        whereToMove = [101, 100];
       }
       requestAnimationFrame(() => {
         view.state.switchCameraController(cameraController);
@@ -138,20 +139,16 @@
 
   const createMap = async () => {
     // load Esri JSAPI modules
-    const [
-      EsriMap,
-      SceneView,
-      Fullscreen,
-      RotateController,
-    ] = await loadModules(
-      [
-        "esri/Map",
-        "esri/views/SceneView",
-        "esri/widgets/Fullscreen",
-        "esri/views/3d/state/controllers/RotateController",
-      ],
-      options
-    );
+    const [EsriMap, SceneView, Fullscreen, RotateController] =
+      await loadModules(
+        [
+          "esri/Map",
+          "esri/views/SceneView",
+          "esri/widgets/Fullscreen",
+          "esri/views/3d/state/controllers/RotateController",
+        ],
+        options
+      );
     map = new EsriMap({
       basemap,
       ground: "world-elevation",
@@ -186,6 +183,13 @@
   }
 </script>
 
+<div class="wrapper">
+  <div class="map" bind:this={viewContainer} />
+  {#if title}
+    <div class="title">{title}</div>
+  {/if}
+</div>
+
 <style>
   div.map {
     height: 100%;
@@ -218,10 +222,3 @@
     max-width: calc(100% - 80px); /* fix for long titles on small viewports */
   }
 </style>
-
-<div class="wrapper">
-  <div class="map" bind:this={viewContainer} />
-  {#if title}
-    <div class="title">{title}</div>
-  {/if}
-</div>
