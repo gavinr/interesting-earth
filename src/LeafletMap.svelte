@@ -1,5 +1,6 @@
 <script>
   import * as L from "leaflet";
+  import "../node_modules/leaflet/dist/leaflet.css";
   import { onMount } from "svelte";
 
   // props with default values in case none are passed in by a parent
@@ -20,8 +21,7 @@
   });
 </script>
 
-<style global type="postcss">
-  @import "leaflet";
+<style>
   div.leafletMapWrapper,
   div.leafletMapWrapper div.map {
     width: 100%;
