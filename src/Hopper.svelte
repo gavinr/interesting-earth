@@ -18,7 +18,7 @@
   let w = window.innerWidth;
 
   const options = {
-    version: "4.17",
+    version: "4.20",
     css: true,
   };
 
@@ -171,7 +171,7 @@
     view.when(() => {
       cameraController = new RotateController.RotateController({
         view: view,
-        pivot: "center",
+        pivot: 0,
       });
       startTour();
     });
