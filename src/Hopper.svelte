@@ -18,7 +18,7 @@
   let w = window.innerWidth;
 
   const options = {
-    version: "4.20",
+    version: "4.22",
     css: true,
   };
 
