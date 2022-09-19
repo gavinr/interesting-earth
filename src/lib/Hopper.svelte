@@ -1,7 +1,12 @@
 <script>
-  import { loadModules } from "esri-loader";
-  import { onMount } from "svelte";
   import { checkElevation } from "./Elevation";
+  import SceneView from "@arcgis/core/views/SceneView";
+  import Fullscreen from "@arcgis/core/widgets/Fullscreen";
+  import Map from "@arcgis/core/Map";
+  import { RotateController } from "@arcgis/core/views/3d/state/controllers/RotateController";
+
+  // Import the CSS for the ArcGIS API for JavaScript
+  import "@arcgis/core/assets/esri/themes/light/main.css";
 
   // props with default values in case none are passed in by a parent
   export let basemap = "streets";
@@ -17,17 +22,11 @@
   let cameraController;
   let w = window.innerWidth;
 
-  const options = {
-    version: "4.22",
-    css: true,
-  };
-
   // reference to the DOM node where this MapView instance will be created
   // see "bind:this={viewContainer}" below
   let viewContainer;
 
   const zoomTo = (index) => {
-    console.log("zoomTo", index);
     if (!view.interacting) {
       const arrItem = locations[index];
       if (arrItem && title !== "") {
@@ -137,25 +136,14 @@
     }
   };
 
-  const createMap = async () => {
-    // load Esri JSAPI modules
-    const [EsriMap, SceneView, Fullscreen, RotateController] =
-      await loadModules(
-        [
-          "esri/Map",
-          "esri/views/SceneView",
-          "esri/widgets/Fullscreen",
-          "esri/views/3d/state/controllers/RotateController",
-        ],
-        options
-      );
-    map = new EsriMap({
+  const createMap = (domNode) => {
+    map = new Map({
       basemap,
       ground: "world-elevation",
     });
     // construct a MapView instance
-    view = new SceneView({
-      container: viewContainer,
+    const mapView = new SceneView({
+      container: domNode,
       map,
       center,
       zoom,
@@ -163,28 +151,30 @@
 
     if (w > 768) {
       const fullscreen = new Fullscreen({
-        view: view,
+        view: mapView,
       });
-      view.ui.add(fullscreen, "top-left");
+      mapView.ui.add(fullscreen, "top-left");
     }
 
-    view.when(() => {
-      cameraController = new RotateController.RotateController({
+    mapView.when(() => {
+      cameraController = new RotateController({
         view: view,
         pivot: 0,
       });
-      startTour();
+
+      // Do not set "view" until it's ready
+      view = mapView;
     });
   };
 
   // Wait until the locations are loaded and then create the map and start the tour
-  $: if (locations && locations.length > 0) {
-    createMap();
+  $: if (view && locations && locations.length > 0) {
+    startTour();
   }
 </script>
 
 <div class="wrapper">
-  <div class="map" bind:this={viewContainer} />
+  <div class="map" use:createMap />
   {#if title}
     <div class="title">{title}</div>
   {/if}

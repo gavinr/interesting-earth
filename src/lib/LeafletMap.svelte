@@ -1,6 +1,6 @@
 <script>
   import * as L from "leaflet";
-  import "../node_modules/leaflet/dist/leaflet.css";
+  import "../../node_modules/leaflet/dist/leaflet.css";
   import { onMount } from "svelte";
 
   // props with default values in case none are passed in by a parent
@@ -21,6 +21,11 @@
   });
 </script>
 
+<div class="leafletMapWrapper">
+  <div class="map" bind:this={mapDomNode} />
+  <div class="title">{title}</div>
+</div>
+
 <style>
   div.leafletMapWrapper,
   div.leafletMapWrapper div.map {
@@ -39,8 +44,3 @@
     font-weight: 100;
   }
 </style>
-
-<div class="leafletMapWrapper">
-  <div class="map" bind:this={mapDomNode} />
-  <div class="title">{title}</div>
-</div>
