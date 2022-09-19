@@ -1,10 +1,10 @@
 <script>
   import { onMount } from "svelte";
-  import { shuffleArray } from "./utils.js";
+  import { shuffleArray } from "./utils";
   import Swal from "sweetalert2";
 
-  import Hopper from "./Hopper.svelte";
-  import Grid from "./Grid.svelte";
+  import Hopper from "./lib/Hopper.svelte";
+  import Grid from "./lib/Grid.svelte";
 
   let locations = [];
   let allNodes = [];
