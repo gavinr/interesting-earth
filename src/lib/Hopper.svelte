@@ -27,23 +27,19 @@
   let viewContainer;
 
   const zoomTo = (index) => {
-    console.log('zoomTo', );
     if (!view.interacting) {
-      console.log('here0.2');
       const arrItem = locations[index];
       if (arrItem && title !== "") {
         title = `${title} -> ${arrItem.title}`;
       }
       // const scale = view.basemapTerrain.tilingScheme.scaleAtLevel(arrItem.attributes.Zoom_Level);
       if (!arrItem) {
-        console.log('here5');
         console.error("Error!", arrItem, index, locations);
       }
       const scale = map.basemap.baseLayers
         .getItemAt(0)
         .tileInfo.zoomToScale(arrItem.zoom);
 
-        console.log('here4');
       return view
         .goTo({
           center: [arrItem.center[0], arrItem.center[1]],
@@ -59,13 +55,11 @@
           return Promise.reject();
         });
     } else {
-      console.log('here2');
       return Promise.resolve();
     }
   };
 
   const slowlyZoomIn = () => {
-    console.log("slowlyZoomIn", view.camera.position.z);
     if (!zoomingOrAboutToZoom && view.camera.position.z > 500) {
       requestAnimationFrame(() => {
         const camera = view.camera.clone();
