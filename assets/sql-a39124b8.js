@@ -1,0 +1,1 @@
+import{aF as o}from"./index-4b03b1b0.js";async function u(r,t){const{WhereClause:e}=await o(()=>import("./WhereClause-40a2a5ab.js").then(n=>n.W),["./WhereClause-40a2a5ab.js","./index-4b03b1b0.js","./index-0de4b476.css","./executionError-c92d3b85.js"],import.meta.url);return e.create(r,t)}function i(r,t){return r!=null?t!=null?`(${r}) AND (${t})`:r:t}export{u as e,i as n};
