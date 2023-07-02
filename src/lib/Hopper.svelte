@@ -19,7 +19,7 @@
   let playing = true;
   let map, view;
   let zoomingOrAboutToZoom = false;
-  let cameraController;
+  // let cameraController;
   let w = window.innerWidth;
 
   // reference to the DOM node where this MapView instance will be created
@@ -27,19 +27,23 @@
   let viewContainer;
 
   const zoomTo = (index) => {
+    console.log('zoomTo', );
     if (!view.interacting) {
+      console.log('here0.2');
       const arrItem = locations[index];
       if (arrItem && title !== "") {
         title = `${title} -> ${arrItem.title}`;
       }
       // const scale = view.basemapTerrain.tilingScheme.scaleAtLevel(arrItem.attributes.Zoom_Level);
       if (!arrItem) {
+        console.log('here5');
         console.error("Error!", arrItem, index, locations);
       }
       const scale = map.basemap.baseLayers
         .getItemAt(0)
         .tileInfo.zoomToScale(arrItem.zoom);
 
+        console.log('here4');
       return view
         .goTo({
           center: [arrItem.center[0], arrItem.center[1]],
@@ -49,14 +53,19 @@
         })
         .then(() => {
           title = arrItem.title;
+        }, (err) => {
+          console.error('goto error', err);
+          title = '';
+          return Promise.reject();
         });
     } else {
+      console.log('here2');
       return Promise.resolve();
     }
   };
 
   const slowlyZoomIn = () => {
-    // console.log("slowlyZoomIn", view.camera.position.z);
+    console.log("slowlyZoomIn", view.camera.position.z);
     if (!zoomingOrAboutToZoom && view.camera.position.z > 500) {
       requestAnimationFrame(() => {
         const camera = view.camera.clone();
@@ -80,24 +89,35 @@
     }
   };
 
-  const rotateAround = () => {
-    // console.log("rotateAround", view.camera.tilt);
-    if (!zoomingOrAboutToZoom) {
-      let whereToMove = [101, 98];
-      if (view.camera.tilt > 80) {
-        whereToMove = [101, 100];
+  // const rotateAround = () => {
+  //   // console.log("rotateAround", view.camera.tilt);
+  //   if (!zoomingOrAboutToZoom) {
+  //     let whereToMove = [101, 98];
+  //     if (view.camera.tilt > 80) {
+  //       whereToMove = [101, 100];
+  //     }
+  //     requestAnimationFrame(() => {
+  //       view.state.switchCameraController(cameraController);
+  //       cameraController.begin([100, 100]);
+  //       cameraController.update(whereToMove);
+  //       cameraController.end();
+  //       rotateAround();
+  //     });
+  //   } else {
+  //     cameraController.end();
+  //   }
+  // };
+
+  const setTimeoutAndRestart = () => {
+    setTimeout(() => {
+      zoomingOrAboutToZoom = true;
+      if (playing) {
+        requestAnimationFrame(() => {
+          startTour();
+        });
       }
-      requestAnimationFrame(() => {
-        view.state.switchCameraController(cameraController);
-        cameraController.begin([100, 100]);
-        cameraController.update(whereToMove);
-        cameraController.end();
-        rotateAround();
-      });
-    } else {
-      cameraController.end();
-    }
-  };
+    }, 10000); // Zoom for 10 seconds then move on
+  }
 
   const startTour = () => {
     if (playing) {
@@ -108,19 +128,13 @@
           zoomingOrAboutToZoom = false;
           checkElevation(view, map.ground.layers.getItemAt(0)).then(
             (totalElevationDifference) => {
-              if (totalElevationDifference < 100) {
-                slowlyZoomIn();
-              } else {
-                rotateAround();
-              }
-              setTimeout(() => {
-                zoomingOrAboutToZoom = true;
-                if (playing) {
-                  requestAnimationFrame(() => {
-                    startTour();
-                  });
-                }
-              }, 10000); // Zoom for 10 seconds then move on
+              console.log('totalElevationDifference', totalElevationDifference);
+              // if (totalElevationDifference < 1000) {
+              //   slowlyZoomIn();
+              // } else {
+              //   // rotateAround();
+              // }
+              setTimeoutAndRestart();
             },
             (err) => {
               console.error("could not find elevation difference");
@@ -131,6 +145,7 @@
         (err) => {
           // skip, it'll come around again
           console.log("error", err);
+          setTimeoutAndRestart();
         }
       );
     }
@@ -157,10 +172,10 @@
     }
 
     mapView.when(() => {
-      cameraController = new RotateController({
-        view: view,
-        pivot: 0,
-      });
+      // cameraController = new RotateController({
+      //   view: view,
+      //   pivot: 0,
+      // });
 
       // Do not set "view" until it's ready
       view = mapView;
